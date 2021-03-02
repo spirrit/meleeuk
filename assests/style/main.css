@@ -1,0 +1,22 @@
+/* major-mono-display-regular - latin */
+@font-face {
+  font-family: 'Major Mono Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('https://melee.uk/assets/font/major-mono-display-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://melee.uk/assets/font/major-mono-display-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('https://melee.uk/assets/font/major-mono-display-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://melee.uk/assets/font/major-mono-display-v5-latin-regular.svg#MajorMonoDisplay') format('svg'); /* Legacy iOS */
+}
+html {
+	background-color: black;
+	color: white;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: grey;
+}
