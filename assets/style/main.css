@@ -25,3 +25,20 @@ a:hover {
 p {
   margin: 0px;
 }
+#canvas {
+  position: fixed;
+
+  touch-action: none;
+}
+#info {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  padding: 8px;
+  color: rgba(255,255,255,0.8);
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 12px;  
+}
