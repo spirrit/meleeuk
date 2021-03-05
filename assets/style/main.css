@@ -27,7 +27,7 @@ p {
 }
 #canvas {
   position: fixed;
-
+  background: #000;
   touch-action: none;
 }
 #info {
