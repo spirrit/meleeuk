@@ -27,12 +27,12 @@ p {
 }
 #canvas {
   position: fixed;
-  background: #000;
+  z-index:-1;
   touch-action: none;
 }
 #info {
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 1;
   pointer-events: none;
