@@ -39,8 +39,8 @@ const emitter = new PIXI.particles.Emitter(container, [texture], {
     minimumScaleMultiplier: 1
   },
   color: {
-    start: "#e3f9ff",
-    end: "#2196F3"
+    start: "#ffe3e3",
+    end: "#ff7700"
   },
   speed: {
     start: 0,
@@ -62,13 +62,13 @@ const emitter = new PIXI.particles.Emitter(container, [texture], {
     max: 0
   },
   lifetime: {
-    min: 0.6,
-    max: 0.6
+    min: 0.2,
+    max: 0.7
   },  
   blendMode: "normal",
   frequency: 0.0008,
   emitterLifetime: -1,
-  maxParticles: 5000,
+  maxParticles: 800,
   pos: {
     x: 0,
     y: 0
