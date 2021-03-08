@@ -106,9 +106,7 @@ p {
 	border-left: 1px solid #555555;
 	border-right: 1px solid #555555;
 	overflow: hidden;
-	width: 60%;
-	min-width: 600px;
-	max-width: 850px;
+	max-width: 835px;
 	height: 100%;
 	
 	margin-left: auto;
