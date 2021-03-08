@@ -14,6 +14,10 @@ html {
 	background-color: black;
 	color: white;
 }
+body {
+	margin: 0px;
+	max-width: 800px;
+}
 a {
 	color: white;
 	text-decoration: none;
@@ -24,6 +28,7 @@ a:hover {
 
 p {
   margin: 0px;
+  max-width: 500px;
 }
 #canvas {
   position: fixed;
@@ -43,6 +48,49 @@ p {
   font-size: 12px;  
 }
 #under {
-	margin-bottom: 10px;
+	margin-bottom: 12px;
+	
+}
+.section {
+	margin: 5px;
+}
+
+.line {
+	font-size: 20px;
+	text-shadow: 8px 4px 0px blue;
+	text-decoration: underline;
+	text-underline-offset: 0.4em;
+	margin-bottom: 0.75em;
+	margin-top: 1.5em;
+}
+.content {
+	font-size: 13px;
+}
+#github {
+	display: flex;
+	position: absolute;
+	margin: 7px;
+
+	bottom: 0;
+	right: 0;
+}
+#github p {
+	font-size: 10px;
+	margin: auto 7px;
+	float: left;
+}
+#github img {
+	
+}
+
+#rgb {
+	text-shadow: 2px 2px 0px #00ff00, 4px 4px 0px #ff0000, 6px 6px 0px #0000ff;
+}
+#title {
+	width: 273px;
+	padding: 4px;
+	background: #262626;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
 	
 }
