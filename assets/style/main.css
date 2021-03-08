@@ -1,4 +1,6 @@
 /* major-mono-display-regular - latin */
+
+
 @font-face {
   font-family: 'Major Mono Display';
   font-style: normal;
@@ -11,12 +13,12 @@
 }
 html {
 	font-family: 'Major Mono Display', monospace;
-	background-color: black;
+	background-color: #0a0a0a;
 	color: white;
+	font-size: 18px;
 }
-body {
-	margin: 0px;
-	max-width: 800px;
+html, body {
+	height: 100%;
 }
 a {
 	color: white;
@@ -28,7 +30,6 @@ a:hover {
 
 p {
   margin: 0px;
-  max-width: 500px;
 }
 #canvas {
   position: fixed;
@@ -52,19 +53,21 @@ p {
 	
 }
 .section {
-	margin: 5px;
+
+	
+	margin: 8px;
 }
 
 .line {
-	font-size: 20px;
+	font-size: 24px;
 	text-shadow: 8px 4px 0px blue;
 	text-decoration: underline;
 	text-underline-offset: 0.4em;
 	margin-bottom: 0.75em;
-	margin-top: 1.5em;
+//	margin-top: 1.5em;
 }
-.content {
-	font-size: 13px;
+.para {
+	font-size: 14px;
 }
 #github {
 	display: flex;
@@ -87,10 +90,29 @@ p {
 	text-shadow: 2px 2px 0px #00ff00, 4px 4px 0px #ff0000, 6px 6px 0px #0000ff;
 }
 #title {
-	width: 273px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	width: 290px;
 	padding: 4px;
+	padding-top: 0px;
 	background: #262626;
-	border-right: 1px solid white;
+	border-left: 1px solid white;
 	border-bottom: 1px solid white;
+	box-shadow: 4px 4px #000000;
+	
+}
+#content {
+	border-left: 1px solid #555555;
+	border-right: 1px solid #555555;
+	overflow: hidden;
+	width: 60%;
+	min-width: 600px;
+	max-width: 850px;
+	height: 100%;
+	
+	margin-left: auto;
+	margin-right: auto;
+	background: #191919;
 	
 }
