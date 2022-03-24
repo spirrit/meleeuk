@@ -36,23 +36,21 @@ a:hover {
 p {
   margin: 0px;
 }
-p a {
-	display: inline-block;
-}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 li {
-  display: inline;
+
 }
 
 li a {
-  color: white;
+/*  color: white;
   text-align: center;
   padding: 10px 10px;
-  text-decoration: none;
+  text-decoration: none;*/
 }
 
 #canvas {
@@ -93,6 +91,12 @@ li a {
 .para {
 	font-size: 14px;
 }
+.linelink {
+	display: block;
+}
+
+
+
 #github {
 	display: flex;
 	position: absolute;
