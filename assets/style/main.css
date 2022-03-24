@@ -6,7 +6,7 @@
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/assets/font/folkpro-heavy.otf') format('otf'); /*
+       url('/assets/font/folkpro-heavy.otf') format('opentype'); /*
        url('/assets/font/major-mono-display-v5-latin-regular.woff') format('woff'), 
        url('/assets/font/major-mono-display-v5-latin-regular.ttf') format('truetype'), 
        url('/assets/font/major-mono-display-v5-latin-regular.svg#MajorMonoDisplay') format('svg'); */
