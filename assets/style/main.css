@@ -2,17 +2,12 @@
 
 
 @font-face {
-  font-family: 'FolkPro';
+  font-family: 'Encode Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('/assets/font/folkpro-regular.otf') format('opentype');		 /*
-       url('/assets/font/major-mono-display-v5-latin-regular.woff') format('woff'), 
-       url('/assets/font/major-mono-display-v5-latin-regular.ttf') format('truetype'), 
-       url('/assets/font/major-mono-display-v5-latin-regular.svg#MajorMonoDisplay') format('svg'); */
+
 }
 html {
-	font-family: 'FolkPro';
 	background-color: #0a0a0a;
 	color: white;
 	font-size: 18px;
@@ -132,7 +127,7 @@ li a {
 #title {
 	margin-left: auto; 
 	margin-right: 0;
-	width: 200px;
+	width: 163px;
 //290 was the orig;
 	height: 54px;
 	padding: 4px;
