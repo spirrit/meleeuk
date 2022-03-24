@@ -12,7 +12,7 @@
        url('/assets/font/major-mono-display-v5-latin-regular.svg#MajorMonoDisplay') format('svg'); */
 }
 html {
-	font-family: 'Major Mono Display', monospace;
+	font-family: 'Major Mono Display';
 	background-color: #0a0a0a;
 	color: white;
 	font-size: 18px;
