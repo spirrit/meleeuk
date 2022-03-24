@@ -11,7 +11,7 @@ html {
 	font-family: 'Encode Sans', sans-serif;
 	background-color: #0a0a0a;
 	color: white;
-	font-size: 18px;
+	font-size: 20px;
 }
 html, body {
 	height: 100%;
@@ -85,7 +85,7 @@ li a {
 //	margin-top: 1.5em;
 }
 .para {
-	font-size: 14px;
+	font-size: 16px;
 }
 .linelink {
 	display: block;
