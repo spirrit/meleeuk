@@ -36,6 +36,9 @@ a:hover {
 p {
   margin: 0px;
 }
+p a {
+	display: inline-block;
+}
 ul {
   list-style-type: none;
   margin: 0;
