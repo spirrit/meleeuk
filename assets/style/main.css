@@ -2,17 +2,17 @@
 
 
 @font-face {
-  font-family: 'FolkPro Heavy';
+  font-family: 'FolkPro';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('/assets/font/folkpro-heavy.otf') format('opentype'); /*
+       url('/assets/font/folkpro-regular.otf') format('opentype'),		 /*
        url('/assets/font/major-mono-display-v5-latin-regular.woff') format('woff'), 
        url('/assets/font/major-mono-display-v5-latin-regular.ttf') format('truetype'), 
        url('/assets/font/major-mono-display-v5-latin-regular.svg#MajorMonoDisplay') format('svg'); */
 }
 html {
-	font-family: 'FolkPro Heavy';
+	font-family: 'FolkPro';
 	background-color: #0a0a0a;
 	color: white;
 	font-size: 18px;
