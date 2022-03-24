@@ -2,7 +2,7 @@
 
 
 @font-face {
-  font-family: 'Major Mono Display';
+  font-family: 'FolkPro Heavy';
   font-style: normal;
   font-weight: 400;
   src: local(''),
@@ -12,7 +12,7 @@
        url('/assets/font/major-mono-display-v5-latin-regular.svg#MajorMonoDisplay') format('svg'); */
 }
 html {
-	font-family: 'Major Mono Display';
+	font-family: 'FolkPro Heavy';
 	background-color: #0a0a0a;
 	color: white;
 	font-size: 18px;
