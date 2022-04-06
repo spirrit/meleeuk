@@ -30,8 +30,28 @@ a:hover {
 
 p {
   margin: 0px;
+	font-size: 18px;
 }
-
+table, th, td {
+	border: 1px solid;
+	border-collapse: separate;
+	border-spacing: 1px;
+	border-color: #343434;
+	font-size: 16px;
+	padding: 4px;
+}
+table {
+	background-color: grey;
+	padding: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+tr {
+	background-color: #0a0a0a;
+}
+td {
+	background-color: #0a0a0a;
+}
 
 #canvas {
   position: fixed;
@@ -84,10 +104,31 @@ p {
 }
 .line {
 	font-size: 26px;
-	text-shadow: 8px 4px 0px blue;
+	text-shadow: 3px 3px 0px black;
 	text-decoration: underline;
-	text-underline-offset: 0.4em;
-	margin-bottom: 0.75em !important;
+	text-underline-offset: 0.2em;
+	margin-bottom: 0.6em !important;
+}
+.line2 {
+	font-size: 26px;
+	text-shadow: 3px 3px 0px black;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+	margin-bottom: 0.6em !important;
+	padding-left: 9px;
+}
+.centerline {
+	font-size: 26px;
+	text-shadow: 3px 3px 0px black;
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+	text-align: center;
+	padding-top: 6px;
+	padding-bottom: 12px;
+}
+.date {
+	font-size: 14px;
+	color: #777777;
 }
 
 #github {
