@@ -1,5 +1,3 @@
-/* major-mono-display-regular - latin */
-
 
 @font-face {
   font-family: 'Encode Sans', sans-serif;
@@ -12,14 +10,15 @@ html {
 	background-color: #0a0a0a;
 	color: white;
 	font-size: 20px;
+
 }
 html, body {
 	height: 100%;
+
 }
 body {
-	padding-top: 54px;
 	box-sizing: border-box;
-	z-index: 1;
+	padding-top: 61px;
 }
 a {
 	color: white;
@@ -33,21 +32,6 @@ p {
   margin: 0px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-
-}
-
-li a {
-/*  color: white;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;*/
-}
 
 #canvas {
   position: fixed;
@@ -76,22 +60,35 @@ li a {
 	margin: 8px;
 }
 
-.line {
-	font-size: 26px;
-	text-shadow: 8px 4px 0px blue;
-	text-decoration: underline;
-	text-underline-offset: 0.4em;
-	margin-bottom: 0.75em;
-//	margin-top: 1.5em;
-}
+
 .para {
 	font-size: 16px;
 }
 .linelink {
 	display: block;
 }
-
-
+.page {
+	border-left: 1px solid #555555;
+	border-right: 1px solid #555555;
+	max-width: 835px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #191919;
+	overflow: auto;
+}
+.page p {
+	margin-top: 2px;
+	margin-bottom: 6px;
+	line-height: normal;
+}
+.line {
+	font-size: 26px;
+	text-shadow: 8px 4px 0px blue;
+	text-decoration: underline;
+	text-underline-offset: 0.4em;
+	margin-bottom: 0.75em !important;
+}
 
 #github {
 	display: flex;
@@ -114,41 +111,48 @@ li a {
 	text-shadow: 2px 2px 0px #00ff00, 4px 4px 0px #ff0000, 6px 6px 0px #0000ff;
 }
 #nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
-	left: 0;
-//	display: block;
 	width: 100%;
 	background: #0a0a0a;
 	border-bottom: 1px solid #555555;
-	z-index: 2;
+
 	
 	
 }
 #title {
-	margin-left: auto; 
-	margin-right: 0;
+  display: inline-block;
 	width: 163px;
-//290 was the orig;
 	height: 54px;
 	padding: 4px;
-	padding-top: 0px;
+	padding-top: 1px;
 	background: #262626;
-	border-left: 1px solid #555555;
-//	border-bottom: 1px solid white;
-//	box-shadow: 4px 4px #000000;
+	border: 1px solid #555555;
+	border-bottom: 0px;
 	
 }
-#content {
 
-	border-left: 1px solid #555555;
-	border-right: 1px solid #555555;
-	overflow: hidden;
-	max-width: 835px;
-	height: 100%;
+#nav ul {
+
+}
+#nav li, #nav ul {
+	display: inline;
+}
+#navhome {
 	
-	margin-left: auto;
-	margin-right: auto;
-	background: #191919;
+}
+#navlinks {
 	
+}
+#navranking {
+
+}
+#navsasuke a {
+	color: #000000;
+}
+#navsasuke a:hover {
+	color: grey;
+}
+#links, #ranking, #sasuke {
+	display: none;
 }

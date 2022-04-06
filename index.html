@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
-<title>UK Melee community hub</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The hub page for UK Melee community efforts and projects">
+	<title>UK Melee community hub</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The hub page for UK Melee community efforts and projects">
 
 
-<link href="assets/style/reset.css" rel="stylesheet">
-<link href="assets/style/main.css" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
+	<link href="assets/style/reset.css" rel="stylesheet">
+	<link href="assets/style/main.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
 
 </head>
 
@@ -18,7 +19,7 @@
 
 <body>
 
-<!--<ul id="nav">
+	<!--<ul id="nav">
 
 
   <li><a href="#home">Home</a></li>
@@ -27,48 +28,82 @@
   <li><a href="#about">About</a></li>
 </ul>-->
 
-<div id="nav">
-	<div id="title">
-		<p style="font-size:40px">melee.uk</p>
-		<p style="font-size:14px">uk melee community site</p>
+	<div id="nav">
+		<div id="title">
+			<p style="font-size:40px">melee.uk</p>
+			<p style="font-size:14px">uk melee community site</p>
 
+		</div>
+		<ul>
+			<li><a id="navhome">home</a></li>
+			<li><a id="navlinks">links</a></li>
+			<li><a id="navranking">ranking</a></li>
+			<li id="navsasuke"><a>sasuke</a></li>
+		</ul>
 	</div>
-</div>
+
+	<div id="home" class="page">
+		<div class="section">
+			<p class="line">news</p>
+			<p>I've found some time to work on this website, so expect a trickle of updates as I fix everything and add much needed information and functionality like a pretty PR table and other stuff</p>
+			<p>for now you can pet this cat:</p>
+			<img src="i/catte.jpg" alt="you are petting the cute cat">
+		</div>
+	</div>
+
+	<div id="links" class="page">
+		<div class="section">
+			<p class="line">socials</p>
+			<ul>
+				<li><a href="http://discord.melee.uk">uk melee discord</a></li>
+				<li><a href="https://www.facebook.com/groups/MeleeUK/">facebook group</a></li>
+				<li><a href="https://twitter.com/MeleeUK">@meleeuk</a></li>
+			</ul>
+		</div>
+		<div class="section">
+			<p class="line">external</p>
+			<ul>
+				<li><a href="http://melee.xyz">melee.xyz</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="sasuke" class="page">
+		<img src="i/sasuke.jpg">
+	</div>
 
 
-<div id="content">
-
-<div class="section">
-<p class="line">socials</p>
-<ul>
-	<li><a href="http://discord.melee.uk">uk melee discord</a></li>
-	<li><a href="https://www.facebook.com/groups/MeleeUK/">facebook group</a></li>
-	<li><a href="https://twitter.com/MeleeUK">@meleeuk</a></li>
-</ul>
-</div>
-
-<div class="section">
-<p class="line">external</p>
-<ul>
-	<li><a href="http://melee.xyz">melee.xyz</a></li>
-</ul>
-</div>
-
-<div class="section">
-<p class="line">notes</p>
-<p>this is a placeholder site</p>
-<p class="para">if you're a uk player send me your stuff and i'll feature it.</br>website is under construction right now, i hope you find the links useful!</p>
-</div>
-
-</div>
+	<a href="https://github.com/spirrit/spirrit.github.io">
+		<div id="github">
+			<p>powered by github</p><img style="filter: invert(1);" height="30" width="30" src="i/github.svg" alt="" />
+		</div>
+	</a>
 
 
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+		integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
-<a href="https://github.com/spirrit/spirrit.github.io">
-<div id="github"><p>powered by github</p><img style="filter: invert(1);" height="30" width="30" src="i/github.svg" alt=""/></div>
-</a>
+	<script type="text/javascript">
+		$("#navhome").click(function () {
+			$(".page").hide();
+			$("#home").css("display", "block");
+		});
 
+		$("#navlinks").click(function () {
+			$(".page").hide();
+			$("#links").css("display", "block");
+		});
 
+		$("#navranking").click(function () {
+			$(".page").hide();
+			$("#ranking").css("display", "block");
+		});
+
+		$("#navsasuke").click(function () {
+			$(".page").hide();
+			$("#sasuke").css("display", "block");
+		});
+	</script>
 
 
 </body>
