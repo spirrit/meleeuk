@@ -18,7 +18,7 @@ html, body {
 }
 body {
 	box-sizing: border-box;
-	padding-top: 61px;
+	padding-top: 87px;
 }
 a {
 	color: white;
@@ -121,38 +121,34 @@ p {
 	
 }
 #title {
-  display: inline-block;
-	width: 163px;
-	height: 54px;
+  display: block;
+	width: 144px;
+	height: 49px;
+	margin: auto;
 	padding: 4px;
 	padding-top: 1px;
 	background: #262626;
-	border: 1px solid #555555;
-	border-bottom: 0px;
-	
+	border: 1px solid #555555;	
 }
 
 #nav ul {
-
+	line-height: 28px;
 }
+#nav li {
+	cursor: pointer;
+}
+
 #nav li, #nav ul {
 	display: inline;
 }
-#navhome {
-	
+#bar {
+	height: 30px;
+	text-align: center;
 }
-#navlinks {
-	
-}
-#navranking {
 
-}
-#navsasuke a {
-	color: #000000;
-}
-#navsasuke a:hover {
-	color: grey;
-}
-#links, #ranking, #sasuke {
+
+
+
+#links, #ranking, #other {
 	display: none;
 }

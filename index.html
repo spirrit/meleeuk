@@ -30,16 +30,18 @@
 
 	<div id="nav">
 		<div id="title">
-			<p style="font-size:40px">melee.uk</p>
-			<p style="font-size:14px">uk melee community site</p>
+			<p style="font-size:36px">melee.uk</p>
+			<p style="font-size:13px">uk melee community site</p>
 
 		</div>
-		<ul>
-			<li><a id="navhome">home</a></li>
-			<li><a id="navlinks">links</a></li>
-			<li><a id="navranking">ranking</a></li>
-			<li id="navsasuke"><a>sasuke</a></li>
-		</ul>
+		<div id="bar">
+			<ul>
+				<li><a id="navhome">home</a></li>
+				<li><a id="navlinks">links</a></li>
+				<li><a id="navranking">ranking</a></li>
+				<li id="navother"><a>other</a></li>
+			</ul>
+		</div>
 	</div>
 
 	<div id="home" class="page">
@@ -66,10 +68,6 @@
 				<li><a href="http://melee.xyz">melee.xyz</a></li>
 			</ul>
 		</div>
-	</div>
-	
-	<div id="sasuke" class="page">
-		<img src="i/sasuke.jpg">
 	</div>
 
 
@@ -99,9 +97,9 @@
 			$("#ranking").css("display", "block");
 		});
 
-		$("#navsasuke").click(function () {
+		$("#navother").click(function () {
 			$(".page").hide();
-			$("#sasuke").css("display", "block");
+			$("#other").css("display", "block");
 		});
 	</script>
 
