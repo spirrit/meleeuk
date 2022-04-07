@@ -88,6 +88,7 @@ td {
 	display: block;
 }
 .page {
+	display: none;
 	border-left: 1px solid #555555;
 	border-right: 1px solid #555555;
 	max-width: 835px;
@@ -130,7 +131,9 @@ td {
 	font-size: 14px;
 	color: #777777;
 }
-
+#home {
+	display: block;
+}
 #github {
 	display: flex;
 	position: absolute;
@@ -212,6 +215,3 @@ td {
 
 
 
-#links, #ranking, #other {
-	display: none;
-}

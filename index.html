@@ -227,7 +227,9 @@
 			</tr>
 		</table>
 	</div>
-
+	<div id="other" class="page">
+		<p>nothing here yet...</p>
+	</div>
 
 	<a href="https://github.com/spirrit/spirrit.github.io">
 		<div id="github">
@@ -236,29 +238,40 @@
 	</a>
 
 
-	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-		integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-
 	<script type="text/javascript">
-		$("#navhome").click(function () {
-			$(".page").hide();
-			$("#home").css("display", "block");
-		});
 
-		$("#navlinks").click(function () {
-			$(".page").hide();
-			$("#links").css("display", "block");
-		});
 
-		$("#navranking").click(function () {
-			$(".page").hide();
-			$("#ranking").css("display", "block");
-		});
+		// yea i know it's not pretty i'm just glad it works
+		// fuck me man, trying to learn js at 5am is hard
 
-		$("#navother").click(function () {
-			$(".page").hide();
-			$("#other").css("display", "block");
-		});
+		document.getElementById("navhome").onclick = changeHome;
+		document.getElementById("navlinks").onclick = changeLinks;
+		document.getElementById("navranking").onclick = changeRanking;
+		document.getElementById("navother").onclick = changeOther;
+
+		function pageGrab() {
+		var page = document.getElementsByClassName("page");
+		for(var i=0; i< page.length; i++){
+    page[i].style.display = "none";
+		}};
+
+		function changeHome() {
+			pageGrab();
+			document.getElementById("home").style.display = "block";
+		};
+		function changeLinks() {
+			pageGrab();
+			document.getElementById("links").style.display = "block";
+		};
+		function changeRanking() {
+			pageGrab();
+			document.getElementById("ranking").style.display = "block";
+		};
+		function changeOther() {
+			pageGrab();
+			document.getElementById("other").style.display = "block";
+		};
+
 	</script>
 
 
