@@ -17,6 +17,7 @@ html, body {
 
 }
 body {
+	background: url("../../i/bg.jpg");
 	box-sizing: border-box;
 	padding-top: 87px;
 }
