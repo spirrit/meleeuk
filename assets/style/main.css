@@ -144,9 +144,7 @@ td {
 	margin: auto 7px;
 	float: left;
 }
-#github img {
-	
-}
+
 
 #rgb {
 	text-shadow: 2px 2px 0px #00ff00, 4px 4px 0px #ff0000, 6px 6px 0px #0000ff;
@@ -189,7 +187,27 @@ td {
 #prup {
 	width: 13px;
   height: 11px;
-  background: url(/i/sprites.png) 0 0;
+  background: url("../../i/sprites.png") 0 0;
+}
+#prdown {
+	width: 13px;
+  height: 11px;
+  background: url("../../i/sprites.png") -13px 0;
+}
+#prline {
+	width: 13px;
+  height: 11px;
+  background: url("../../i/sprites.png") 13px 0;
+}
+#prstar {
+	width: 13px;
+  height: 12px;
+  background: url("../../i/sprites.png") -13px -11px;
+}
+#prreturn {
+	width: 13px;
+  height: 12px;
+  background: url("../../i/sprites.png") 0 -11px;
 }
 
 
