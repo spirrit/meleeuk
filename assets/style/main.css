@@ -186,7 +186,11 @@ td {
 	height: 30px;
 	text-align: center;
 }
-
+#prup {
+	width: 13px;
+  height: 11px;
+  background: url(/i/sprites.png) 0 0;
+}
 
 
 
