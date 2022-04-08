@@ -267,11 +267,11 @@
 	<script type="text/javascript">
 
 		function pageLoad() {
-			if (window.location.pathname == "#ranking") {
+			if (window.location.pathname == "/ranking") {
 				changeRanking();
-			} else if (window.location.pathname == "#links") {
+			} else if (window.location.pathname == "/links") {
 				changeLinks();
-			} else if (window.location.pathname == "#other") {
+			} else if (window.location.pathname == "/other") {
 				changeOther();
 			}};
 		
@@ -286,22 +286,18 @@
 		function changeHome() {
 			pageGrab();
 			document.getElementById("home").style.display = "block";
-			window.location.pathname = "";
 		};
 		function changeLinks() {
 			pageGrab();
 			document.getElementById("links").style.display = "block";
-			window.location.pathname = "#links";
 		};
 		function changeRanking() {
 			pageGrab();
 			document.getElementById("ranking").style.display = "block";
-			window.location.pathname = "#ranking";
 		};
 		function changeOther() {
 			pageGrab();
 			document.getElementById("other").style.display = "block";
-			window.location.pathname = "#other";
 		};
 
 	</script>
