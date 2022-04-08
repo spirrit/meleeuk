@@ -29,6 +29,7 @@ input[type=button] {
 	color: #ffffff;
 	border: 1px solid #555555;
 	margin-right: 1px;
+	cursor: pointer;
 }
 input[type=button]:hover {
 	background:#ffffff;
@@ -180,23 +181,30 @@ article {
 	border: 1px solid #555555;	
 }
 
-#nav ul {
-	line-height: 28px;
-}
-#nav li {
-	cursor: pointer;
-}
+
 
 #nav li, #nav ul {
 	display: inline;
 }
 #bar {
 	height: 15px;
+	padding-left: 38px;
 	text-align: center;
 }
 #bar ul {
 	font-size: 0;
 }
+#navsecret {
+	border: 1px solid #55555500;
+	background:#ffffff00;
+	color: #00000000;
+}
+#navsecret:hover {
+	border: 1px solid #555555;
+	background:#ffffff;
+	color: #000000;
+}
+
 #legend {
 	margin-bottom: 7px;
 }
