@@ -266,7 +266,16 @@
 
 	<script type="text/javascript">
 
-
+		function pageLoad() {
+			if (window.location.pathname == "/ranking") {
+				changeRanking();
+			} else if (window.location.pathname == "/links") {
+				changeLinks();
+			} else if (window.location.pathname == "/other") {
+				changeOther();
+			}};
+		
+		pageLoad();
 
 		function pageGrab() {
 		var page = document.getElementsByClassName("page");
