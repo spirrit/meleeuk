@@ -22,15 +22,15 @@
 
 	<div id="nav">
 		<div id="title">
-			<p style="font-size:36px">melee.uk</p>
+			<p style="font-size:36px;cursor:default;user-select:none">melee.uk</p>
 
 		</div>
 		<div id="bar">
 			<ul>
-				<li><a id="navhome">home</a></li>
-				<li><a id="navranking">ranking</a></li>
-				<li><a id="navlinks">links</a></li>
-				<li id="navother"><a>other</a></li>
+				<li><input type="button" id="navhome" value="home" onclick="changeHome()"></li>
+				<li><input type="button" id="navranking" value="ranking" onclick="changeRanking()"></li>
+				<li><input type="button" id="navlinks" value="links" onclick="changeLinks()"></li>
+				<li><input type="button" id="navother" value="other" onclick="changeOther()"></li>
 			</ul>
 		</div>
 	</div>
@@ -261,10 +261,6 @@
 	<script type="text/javascript">
 
 
-		document.getElementById("navhome").onclick = changeHome;
-		document.getElementById("navlinks").onclick = changeLinks;
-		document.getElementById("navranking").onclick = changeRanking;
-		document.getElementById("navother").onclick = changeOther;
 
 		function pageGrab() {
 		var page = document.getElementsByClassName("page");
