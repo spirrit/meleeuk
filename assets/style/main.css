@@ -1,12 +1,5 @@
-
-@font-face {
-  font-family: 'Encode Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-
-}
 html {
-	font-family: 'Encode Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: #0a0a0a;
 	color: white;
 	font-size: 20px;
@@ -166,7 +159,7 @@ td {
 }
 #title {
   display: block;
-	width: 144px;
+	width: 153px;
 	height: 49px;
 	margin: auto;
 	padding: 4px;
