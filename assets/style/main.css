@@ -30,6 +30,10 @@ input[type=button] {
 	border: 1px solid #555555;
 	margin-right: 1px;
 }
+input[type=button]:hover {
+	background:#ffffff;
+	color: #000000;
+}
 p {
   margin: 0px;
 	font-size: 18px;
