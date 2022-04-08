@@ -54,6 +54,10 @@ tr {
 td {
 	background-color: #0a0a0a;
 }
+article {
+	margin: 8px;
+}
+
 
 #canvas {
   position: fixed;
@@ -77,9 +81,10 @@ td {
 	
 }
 .section {
-
-	
 	margin: 8px;
+}
+.section p {
+	font-size: 15px;
 }
 
 .navbtn {
@@ -112,6 +117,7 @@ td {
 	text-decoration: underline;
 	text-underline-offset: 0.2em;
 	margin-bottom: 0.6em !important;
+	padding-left: 9px;
 }
 .line2 {
 	font-size: 26px;
@@ -119,8 +125,8 @@ td {
 	text-decoration: underline;
 	text-underline-offset: 0.2em;
 	margin-bottom: 0.6em !important;
-	padding-left: 9px;
 }
+
 .centerline {
 	text-align: center;
 }
