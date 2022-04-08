@@ -17,7 +17,9 @@ html, body {
 
 }
 body {
-	background: url("../../i/bg.jpg");
+	background: url("../../i/bg.png");
+	background-size: cover;
+	background-position: center;
 	box-sizing: border-box;
 	padding-top: 87px;
 }
@@ -90,13 +92,12 @@ td {
 }
 .page {
 	display: none;
-	border-left: 1px solid #555555;
-	border-right: 1px solid #555555;
-	max-width: 835px;
+
+	max-width: 675px;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	background: #191919;
+	background: #070707a8;
 	overflow: auto;
 }
 .page p {
@@ -188,27 +189,27 @@ td {
 	height: 30px;
 	text-align: center;
 }
-#prup {
+.prup {
 	width: 13px;
   height: 11px;
   background: url("../../i/sprites.png") 0 0;
 }
-#prdown {
+.prdown {
 	width: 13px;
   height: 11px;
   background: url("../../i/sprites.png") -13px 0;
 }
-#prline {
+.prline {
 	width: 13px;
   height: 11px;
   background: url("../../i/sprites.png") 13px 0;
 }
-#prstar {
+.prstar {
 	width: 13px;
   height: 12px;
   background: url("../../i/sprites.png") -13px -11px;
 }
-#prreturn {
+.prreturn {
 	width: 13px;
   height: 12px;
   background: url("../../i/sprites.png") 0 -11px;
