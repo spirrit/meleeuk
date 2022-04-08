@@ -14,7 +14,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	box-sizing: border-box;
-	padding-top: 87px;
+	padding-top: 71px;
 }
 a {
 	color: white;
@@ -114,13 +114,7 @@ td {
 	padding-left: 9px;
 }
 .centerline {
-	font-size: 26px;
-	text-shadow: 3px 3px 0px black;
-	text-decoration: underline;
-	text-underline-offset: 0.2em;
 	text-align: center;
-	padding-top: 6px;
-	padding-bottom: 12px;
 }
 .date {
 	font-size: 14px;
@@ -160,7 +154,7 @@ td {
 #title {
   display: block;
 	width: 153px;
-	height: 49px;
+	height: 34px;
 	margin: auto;
 	padding: 4px;
 	padding-top: 1px;
@@ -181,6 +175,9 @@ td {
 #bar {
 	height: 30px;
 	text-align: center;
+}
+#legend th, #legend td {
+	width: 30px;
 }
 .prup {
 	width: 13px;
