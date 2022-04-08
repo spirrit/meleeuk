@@ -38,21 +38,21 @@ table, th, td {
 	border: 1px solid;
 	border-collapse: separate;
 	border-spacing: 1px;
-	border-color: #343434;
+	border-color: #555555;
 	font-size: 16px;
 	padding: 4px;
 }
 table {
-	background-color: grey;
+	background-color: black;
 	padding: 0px;
 	margin-left: auto;
 	margin-right: auto;
 }
 tr {
-	background-color: #0a0a0a;
+	background-color: #080808;
 }
 td {
-	background-color: #0a0a0a;
+	background-color: #080808;
 }
 article {
 	margin: 8px;
@@ -99,7 +99,7 @@ article {
 .page {
 	display: none;
 	max-width: 675px;
-	height: 100%;
+	height: calc(100% - 10px);
 	padding-top: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -192,6 +192,9 @@ article {
 }
 #bar ul {
 	font-size: 0;
+}
+#legend {
+	margin-bottom: 7px;
 }
 #legend th, #legend td {
 	width: 30px;
