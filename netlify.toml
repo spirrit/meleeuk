@@ -1,11 +1,11 @@
 [[redirects]]
-  from = "https://discord.melee.uk"
-  to = "https://discord.com/invite/MHWfdKC"
+  from = "https://www.discord.melee.uk"
+  to = "https://www.discord.com/invite/MHWfdKC"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://bham.melee.uk"
-  to = "https://discord.gg/Vm2hZhn"
+  from = "https://www.bham.melee.uk"
+  to = "https://www.discord.gg/Vm2hZhn"
   status = 301
   force = true
