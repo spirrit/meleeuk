@@ -21,19 +21,16 @@ a {
 	text-decoration: none;
 }
 
+img { 
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+	image-rendering: -o-crisp-edges;            /* Opera                          */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering: pixelated; /* Chrome */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
 
-input[type=button] {
-	font-family: 'Open Sans', sans-serif;
-	background: #000000;
-	color: #ffffff;
-	border: 1px solid #555555;
-	margin-right: 1px;
-	cursor: pointer;
-}
-input[type=button]:hover {
-	background:#ffffff;
-	color: #000000;
-}
 p {
   margin: 0px;
 	font-size: 18px;
@@ -138,30 +135,26 @@ article {
 	font-size: 14px;
 	color: #777777;
 }
-.prup {
+.prup, .prdown, .prline, .prstar, .prreturn {
+	display: inline-block;
 	width: 13px;
   height: 11px;
-  background: url("../../i/sprites.png") 0 0;
+	background-image: url("../../i/sprites.png");
+}
+.prup {
+	background-position:  0 0;
 }
 .prdown {
-	width: 13px;
-  height: 11px;
-  background: url("../../i/sprites.png") -13px 0;
+  background-position:  -13px 0;
 }
 .prline {
-	width: 13px;
-  height: 11px;
-  background: url("../../i/sprites.png") 13px 0;
+  background-position:  13px 0;
 }
 .prstar {
-	width: 13px;
-  height: 12px;
-  background: url("../../i/sprites.png") -13px -11px;
+  background-position:  -13px -11px;
 }
 .prreturn {
-	width: 13px;
-  height: 12px;
-  background: url("../../i/sprites.png") 0 -11px;
+  background-position:  0 -11px;
 }
 .linkbtn {
 	width: 100px;
@@ -169,10 +162,27 @@ article {
 	background: #0a0a0a;
 	color: #FFFFFF;
 	border: 1px solid #555555;
-	padding: 2px;
+
 }
 .linkbtn a {
 
+}
+.sqricon {
+
+}
+.navlink {
+	font-family: 'Open Sans', sans-serif;
+	background: #000000;
+	color: #ffffff;
+	border: 1px solid #555555;
+	margin-right: 1px;
+	padding: 2px;
+	cursor: pointer;
+	padding: 3px 6px;
+}
+.navlink:hover, .navlink:focus {
+	background:#ffffff;
+	color: #000000;
 }
 
 #home {
@@ -181,16 +191,15 @@ article {
 #github {
 	display: flex;
 	position: absolute;
-	margin: 7px;
-
+	gap: 5px;
 	bottom: 0;
-	right: 0;
+	right: 5px;
+	font-size: 0;
 }
-#github p {
-	font-size: 12px;
-	margin: auto 7px;
-	float: left;
+#github a {
+	display: block;
 }
+
 #rgb {
 	text-shadow: 2px 2px 0px #00ff00, 4px 4px 0px #ff0000, 6px 6px 0px #0000ff;
 }
@@ -211,6 +220,7 @@ article {
 	margin: auto;
 	padding: 4px;
 	padding-top: 1px;
+	margin-bottom: 1px;
 	background: #000000;
 	border: 1px solid #555555;	
 }
@@ -218,22 +228,26 @@ article {
 
 
 #nav li, #nav ul {
-	display: inline;
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
 }
 #bar {
+	
 	height: 15px;
 	padding-left: 38px;
 	text-align: center;
 }
-#bar ul {
-	font-size: 0;
-}
 #navsecret {
+
+}
+#navsecret2 {
+	position: relative;
 	border: 1px solid #55555500;
 	background:#ffffff00;
 	color: #00000000;
 }
-#navsecret:hover {
+#navsecret2:hover {
 	border: 1px solid #555555;
 	background:#ffffff;
 	color: #000000;

@@ -27,13 +27,17 @@
 		</div>
 		<div id="bar">
 			<ul>
-				<li><input type="button" id="navhome" value="home" onclick="changeHome()"></li>
-				<li><input type="button" id="navranking" value="ranking" onclick="changeRanking()"></li>
-				<li><input type="button" id="navlinks" value="links" onclick="changeLinks()"></li>
-				<li><input type="button" id="navother" value="other" onclick="changeOther()"></li>
-				<li><input type="button" id="navsecret" value="????" onclick="changeSecret()"></li>
+				<li><a href="#" class="navlink" onclick="changeHome()">home</a></li>
+				<li><a href="#" class="navlink" id="navranking" onclick="changeRanking()">ranking</a></li>
+				<li><a href="#" class="navlink" id="navlinks" onclick="changeLinks()">links</a></li>
+				<li><a href="#" class="navlink" id="navother" onclick="changeOther()">other</a></li>
+				<li><a href="#" class="navlink" id="navsecret2" onclick="changeSecret()">????</a></li>
+				
+
 			</ul>
+			
 		</div>
+
 	</div>
 
 	<div id="home" class="page">
@@ -56,11 +60,11 @@
 					<th>New</th>
 					<th>Return</th>
 				</tr>
-					<td><img class="prup" src="i/trans.png"></td>
-					<td><img class="prdown" src="i/trans.png"></td>
-					<td><img class="prline" src="i/trans.png"></td>
-					<td><img class="prstar" src="i/trans.png"></td>
-					<td><img class="prreturn" src="i/trans.png"></td>
+					<td><div class="prup" aria-label="rank increased since last ranking"></div></td>
+					<td><div class="prdown" aria-label="rank decreased since last ranking"></div></td>
+					<td><div class="prline" aria-label="no change in rank"></div></td>
+					<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
+					<td><div class="prreturn" aria-label="returned to the ranking after a non-placing"></div></td>
 				</tr>
 			</table>
 		</div>
@@ -75,151 +79,151 @@
 			<tr>
 				<td>Professor Pro</td>
 				<td>1</td>
-				<td><img class="prline" src="i/trans.png"></td>
+				<td><div class="prline" aria-label="no change in rank"></div></td>
 				<td>Fox</td>
 			</tr>
 			<tr>
 				<td>Frenzy</td>
 				<td>2</td>
-				<td><img class="prup" src="i/trans.png"> 1</td>
+				<td><div class="prup" aria-label="rank increased since last ranking"></div> 1</td>
 				<td>Falco</td>
 			</tr>
 			<tr>
 				<td>Max</td>
 				<td>3</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="first placing on rankings"></div></td>
 				<td>Sheik</td>
 			</tr>
 			<tr>
 				<td>Kingu</td>
 				<td>4</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Puff</td>
 			</tr>
 			<tr>
 				<td>Fat Tino</td>
 				<td>5</td>
-				<td><img class="prline" src="i/trans.png"></td>
+				<td><div class="prline" aria-label="no change in rank"></div></td>
 				<td>Falco</td>
 			</tr>
 			<tr>
 				<td>Stranger</td>
 				<td>6</td>
-				<td><img class="prreturn" src="i/trans.png"></td>
+				<td><div class="prreturn" aria-label="returned to the ranking after a non-placing"></div></td>
 				<td>Fox</td>
 			</tr>
 			<tr>
 				<td>23</td>
 				<td>7</td>
-				<td><img class="prup" src="i/trans.png"> 4</td>
+				<td><div class="prup" aria-label="rank increased since last ranking"></div> 4</td>
 				<td>Fox</td>
 			</tr>
 			<tr>
 				<td>Squeachu</td>
 				<td>8</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>G&W</td>
 			</tr>
 			<tr>
 				<td>Okameed</td>
 				<td>9</td>
-				<td><img class="prup" src="i/trans.png"> 6</td>
+				<td><div class="prup" aria-label="rank increased since last ranking"></div> 6</td>
 				<td>Pikachu</td>
 			</tr>
 			<tr>
 				<td>Mordo</td>
 				<td>10</td>
-				<td><img class="prup" src="i/trans.png"> 4</td>
+				<td><div class="prup" aria-label="rank increased since last ranking"></div> 4</td>
 				<td>Falco</td>
 			</tr>
 			<tr>
 				<td>Luan</td>
 				<td>11</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Fox</td>
 			</tr>
 			<tr>
 				<td>GG</td>
 				<td>12</td>
-				<td><img class="prup" src="i/trans.png"> 10</td>
+				<td><div class="prup" aria-label="rank increased since last ranking"></div> 10</td>
 				<td>Puff/Zelda</td>
 			</tr>
 			<tr>
 				<td>R23</td>
 				<td>13</td>
-				<td><img class="prdown" src="i/trans.png"> 3</td>
+				<td><div class="prdown" aria-label="rank decreased since last ranking"></div> 3</td>
 				<td>Sheik</td>
 			</tr>
 			<tr>
 				<td>Bomboni</td>
 				<td>14</td>
-				<td><img class="prdown" src="i/trans.png"> 1</td>
+				<td><div class="prdown" aria-label="rank decreased since last ranking"></div> 1</td>
 				<td>C.Falcon</td>
 			</tr>
 			<tr>
 				<td>Silas</td>
 				<td>15</td>
-				<td><img class="prup" src="i/trans.png"> 8</td>
+				<td><div class="prup" aria-label="rank increased since last ranking"></div> 8</td>
 				<td>Peach</td>
 			</tr>
 			<tr>
 				<td>Zepple</td>
 				<td>16</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Falco</td>
 			</tr>
 			<tr>
 				<td>Lil Chief</td>
 				<td>17</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Marth</td>
 			</tr>
 			<tr>
 				<td>Shifting Shadows</td>
 				<td>18</td>
-				<td><img class="prreturn" src="i/trans.png"></td>
+				<td><div class="prreturn" aria-label="returned to the ranking after a non-placing"></div></td>
 				<td>C.Falcon</td>
 			</tr>
 			<tr>
 				<td>Thai</td>
 				<td>19</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Fox</td>
 			</tr>
 			<tr>
 				<td>10 Quid Shoes</td>
 				<td>20</td>
-				<td><img class="prdown" src="i/trans.png"> 8</td>
+				<td><div class="prdown" aria-label="rank decreased since last ranking"></div> 8</td>
 				<td>Marth</td>
 			</tr>
 			<tr>
 				<td>Glaikit</td>
 				<td>21</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Falco</td>
 			</tr>
 			<tr>
 				<td>Modentor</td>
 				<td>22</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Fox</td>
 			</tr>
 			<tr>
 				<td>Kidder</td>
 				<td>23</td>
-				<td><img class="prdown" src="i/trans.png"> 4</td>
+				<td><div class="prdown" aria-label="rank decreased since last ranking"></div> 4</td>
 				<td>Sheik</td>
 			</tr>
 			<tr>
 				<td>HoorayForJay</td>
 				<td>24</td>
-				<td><img class="prstar" src="i/trans.png"></td>
+				<td><div class="prstar" aria-label="newcomer to the rankings"></div></td>
 				<td>Falco</td>
 			</tr>
 			<tr>
 				<td>Cpt. Nebula</td>
 				<td>25</td>
-				<td><img class="prdown" src="i/trans.png"> 1</td>
+				<td><div class="prdown" aria-label="rank decreased since last ranking"></div> 1</td>
 				<td>Luigi</td>
 			</tr>
 		</table>
@@ -249,16 +253,21 @@
 	<div id="other" class="page">
 		<h1 class="line">changelog</h1>
 		<article class="section">
-			<p class="date">08/04/22</p>
+			<time class="date" datetime="2022-04-10">April 10 2022</time>
+			<p>Big update today. Firstly, we changed over to netlify for hosting, which should make things a little more convenient. I changed a lot of elements to more semantically appropriate ones, and added a ton of accessability improvements (big thanks to brik for the help). </p>
+			<p>I also added some buttons at the bottom of the page. I like the concept but i'm unsure whether I want it to remain a permanent feature of the site. I need to rebuild the links page or perhaps do away with it, this remains to be seen.</p>
+		</article>
+		<article class="section">
+			<time class="date" datetime="2022-04-08">April 8 2022</time>
 			<p>I have changed and added a great deal. Layout revamped, js optimised, visuals adjusted. I'm slowly inching toward a melee.uk that I am proud of. There is much to do...</p>
 			<p>I like the somewhat minimal, angular look the top bar has right now. something about it really stokes joy. Who knows what it will look like in a few days.</p>
 		</article>
 		<article class="section">
-			<p class="date">06/04/22</p>
+			<time class="date" datetime="2022-04-06">April 6 2022</time>
 			<p>Cleaned up a lot of the site, added the ranking page with a detailed PR table. Please let me know if I got anything wrong!</p>
 		</article>
 		<article class="section">
-			<p class="date">05/04/22</p>
+			<time class="date" datetime="2022-04-05">April 5 2022</time>
 			<p>I've found some time to work on this website, so expect a trickle of updates as I fix everything and add much needed information and functionality like a pretty PR table and other stuff</p>
 			<p>for now you can pet this cat:</p>
 			<img src="i/catte.jpg" alt="you are petting the cute cat">
@@ -268,11 +277,12 @@
 		<iframe id="ifr" width="100%" height="380" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 
-	<a href="https://github.com/spirrit/spirrit.github.io">
-		<div id="github">
-			<p>powered by github</p><img style="filter: invert(1);" height="30" width="30" src="i/github.svg" alt="" />
-		</div>
-	</a>
+	<div id="github">
+		<a href="https://github.com/spirrit/spirrit.github.io"><img class="sqricon" src="i/iconGithub.png" alt="Github repo for the website"/></a>
+		<a href="http://discord.melee.uk"><img class="sqricon" src="i/iconDiscord.png" alt="Discord server invite"/></a>
+		<a href="https://twitter.com/MeleeUK"><img class="sqricon" src="i/iconTwitter.png" alt="Melee UK twitter"/></a>	
+	</div>
+		
 
 
 	<script type="text/javascript">
