@@ -162,14 +162,16 @@ article {
 	background: #0a0a0a;
 	color: #FFFFFF;
 	border: 1px solid #555555;
-
 }
-.linkbtn a {
-
+.span {
+	display: inline-block;
+	margin: 5px 0px;
+	height: 1px;
+	width: 10%;
+	background-color: #ffffff;
 }
-.sqricon {
 
-}
+
 .navlink {
 	font-family: 'Open Sans', sans-serif;
 	background: #000000;
