@@ -124,8 +124,8 @@ article {
 .page {
 	display: none;
 	max-width: 675px;
-	height: calc(100% - 20px);
-	padding-top: 20px;
+	height: calc(100% - 26px);
+	padding-top: 26px;
 	margin-left: auto;
 	margin-right: auto;
 	/*background: #070707a8;*/
@@ -224,12 +224,14 @@ article {
 	visibility: visible;
 	top: 46px;
 	transition: all 0.15s ease-out;
+	padding-left: 25px;
 }
 
 .dropmenu:hover ~ .dropdown-content {
 	visibility: visible;
 	top: 46px;
 	transition: all 0.15s ease-out;
+	padding-left: 25px;
 }
 
 
