@@ -1,3 +1,21 @@
+@keyframes backgroundScroll {
+	0% {background-position:0px 0px; filter: opacity(100%);}
+	50% {background-position:0px -234px; filter: opacity(50%);}
+	100% {background-position: 0px -468px; filter: opacity(100%);}
+	}
+@keyframes hue  {
+	from {
+			-webkit-filter:hue-rotate(0deg);
+	}
+	
+	to {
+			-webkit-filter:hue-rotate(360deg);
+	}
+
+}
+
+
+
 html {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #0a0a0a;
@@ -10,7 +28,7 @@ html, body {
 
 }
 body {
-	background: url("../../i/bg.png");
+	background: url(../../i/bg.png);
 	background-size: cover;
 	background-position: center;
 	box-sizing: border-box;
@@ -110,7 +128,8 @@ article {
 	padding-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #070707a8;
+	/*background: #070707a8;*/
+	background: none;
 	overflow: auto;
 }
 .page p {
@@ -170,23 +189,55 @@ article {
 	width: 10%;
 	background-color: #ffffff;
 }
-
-
 .navlink {
-	font-family: 'Open Sans', sans-serif;
 	background: #000000;
+	border-radius: 8px;
+	box-shadow: 1px 0px 2px #777777;
 	color: #ffffff;
-	border: 1px solid #555555;
-	margin-right: 1px;
-	padding: 2px;
+	font-size: 16px;
 	cursor: pointer;
-	padding: 3px 6px;
+	padding: 3px 10px;
+	margin: 5px;
 }
 .navlink:hover, .navlink:focus {
 	background:#ffffff;
 	color: #000000;
 }
+.rainbow {
+	animation: hue 8s infinite linear;
+	pointer-events: none;
+}
 
+.dropdown-content {
+	visibility: hidden;
+  display: flex;
+	background: #00000060;
+	justify-content: center;
+  position: absolute;
+	width: 100%;
+	top: 0;
+	padding-left: 25px;
+	border-bottom: 1px solid #555555;
+	transition: all 0.3s ease-out;
+}
+.dropdown-content:hover {
+	visibility: visible;
+	top: 46px;
+	transition: all 0.15s ease-out;
+}
+
+.dropmenu:hover ~ .dropdown-content {
+	visibility: visible;
+	top: 46px;
+	transition: all 0.15s ease-out;
+}
+
+
+#drop {
+	align-self: center;
+	padding-top: 3px;
+	padding-left: 80%;
+}
 #home {
 	display: block;
 }
@@ -206,25 +257,28 @@ article {
 	text-shadow: 2px 2px 0px #00ff00, 4px 4px 0px #ff0000, 6px 6px 0px #0000ff;
 }
 #nav {
-	position: fixed;
+	display: flex;
+	column-gap: 20px;
+	position: absolute;
 	top: 0;
+	height: 45px;
 	width: 100%;
 	background: #0a0a0a;
 	border-bottom: 1px solid #555555;
-
-	
-	
+	z-index: 1;
 }
 #title {
   display: block;
+	
 	width: 153px;
-	height: 34px;
+	height: 47px;
 	margin: auto;
 	padding: 4px;
 	padding-top: 1px;
 	margin-bottom: 1px;
 	background: #000000;
-	border: 1px solid #555555;	
+	
+	/*border: 1px solid #555555;*/
 }
 
 
@@ -248,6 +302,7 @@ article {
 	border: 1px solid #55555500;
 	background:#ffffff00;
 	color: #00000000;
+	box-shadow: none;
 }
 #navsecret2:hover, #navsecret2:focus {
 	border: 1px solid #555555;

@@ -4,8 +4,8 @@
 <head>
 	<title>melee.uk</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="The hub page for UK Melee community efforts and projects">
-
+	<meta name="description" content="the UK smash bros. melee resource">
+	<meta charset="UTF-8">
 
 	<link href="assets/style/reset.css" rel="stylesheet">
 	<link href="assets/style/main.css" rel="stylesheet">
@@ -19,13 +19,23 @@
 
 <body>
 
-
-	<div id="nav">
-		<div id="title">
-			<p style="font-size:36px;cursor:default;user-select:none">melee.uk</p>
+	<div class="dropmenu" id="nav">
+		<div style="display:flex;flex:1">
+			<img id="drop" src="i/menu.svg" width="22" height="18">
 
 		</div>
-		<div id="bar">
+		<img class="rainbow" src="../../i/titleclip.png" style="align-self:baseline;z-index:1">
+		<span style="flex:1"></span>
+
+	</div>
+	<div class="dropdown-content">
+		<a href="#" class="navlink" onclick="changeHome()">home</a>
+		<a href="#" class="navlink" id="navranking" onclick="changeRanking()">ranking</a>
+		<a href="#" class="navlink" id="navlinks" onclick="changeLinks()">links</a>
+		<a href="#" class="navlink" id="navother" onclick="changeOther()">other</a>
+		<a href="#" class="navlink" id="navsecret2" onclick="changeSecret()">????</a>
+	</div>
+		<!-- <div id="bar">
 			<ul>
 				<li><a href="#" class="navlink" onclick="changeHome()">home</a></li>
 				<li><a href="#" class="navlink" id="navranking" onclick="changeRanking()">ranking</a></li>
@@ -36,9 +46,13 @@
 
 			</ul>
 			
-		</div>
+		</div> -->
 
+
+	<div class="dropdown">
+		
 	</div>
+
 
 	<main id="home" class="page">
 			<article class="section">
@@ -272,7 +286,7 @@
 			<time class="date" datetime="2022-04-05">April 5 2022</time>
 			<p>I've found some time to work on this website, so expect a trickle of updates as I fix everything and add much needed information and functionality like a pretty PR table and other stuff</p>
 			<p>for now you can pet this cat:</p>
-			<img src="i/catte.jpg" alt="you are petting the cute cat">
+			<img class="rainbow" src="i/catte.jpg" alt="you are petting the cute cat">
 		</article>
 	</main>
 
