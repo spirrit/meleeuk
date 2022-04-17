@@ -461,29 +461,20 @@
     </div>
 
     <script type="text/javascript">
-      // function pageLoad() {
-      //   if (window.location.pathname == "/ranking") {
-      //     changeRanking();
-      //   } else if (window.location.pathname == "/links") {
-      //     changeLinks();
-      //   } else if (window.location.pathname == "/other") {
-      //     changeOther();
-      //   }
-      // }
-      var mrow = document.getElementById("feline");
-      var meow = document.getElementById("cat_container");
-      var cat = new Audio("assets/sound/boing.ogg");
-         
+
+      const mrow = document.getElementById("feline");
+      const meow = document.getElementById("cat_container");
+      const cat = new Audio("assets/boing.ogg");
+
       function boing() {
         cat.play();
-      }
+      } 
       function catmagic() {
         boing();
-        
         meow.classList.add("dansen");
-
         mrow.classList.add("acid");
       }
+
       function youtube() {
         document.getElementById("ifr").src =
           "https://www.youtube-nocookie.com/embed/w3VQUEmsO8M?autoplay=1";
