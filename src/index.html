@@ -20,7 +20,7 @@
   <body>
     <div class="dropmenu" id="nav">
       <img
-        class="rainbow"
+        class="rainbowtit"
         src="/assets/img/titleclip.png"
         style="align-self: baseline; z-index: 1"
         alt="title image that says melee uk"
@@ -421,11 +421,12 @@
           functionality like a pretty PR table and other stuff
         </p>
         <p>for now you can pet this cat:</p>
-        <img
-          class="rainbow"
+        <div id="cat_container"><img
+          id="feline"
           src="assets/img/catte.jpg"
           alt="you are petting the cute cat"
-        />
+          onclick="catmagic()"
+        /></div>
       </article>
     </main>
 
@@ -460,18 +461,29 @@
     </div>
 
     <script type="text/javascript">
-      function pageLoad() {
-        if (window.location.pathname == "/ranking") {
-          changeRanking();
-        } else if (window.location.pathname == "/links") {
-          changeLinks();
-        } else if (window.location.pathname == "/other") {
-          changeOther();
-        }
+      // function pageLoad() {
+      //   if (window.location.pathname == "/ranking") {
+      //     changeRanking();
+      //   } else if (window.location.pathname == "/links") {
+      //     changeLinks();
+      //   } else if (window.location.pathname == "/other") {
+      //     changeOther();
+      //   }
+      // }
+      var mrow = document.getElementById("feline");
+      var meow = document.getElementById("cat_container");
+      var cat = new Audio("assets/sound/boing.ogg");
+         
+      function boing() {
+        cat.play();
       }
+      function catmagic() {
+        boing();
+        
+        meow.classList.add("dansen");
 
-      pageLoad();
-
+        mrow.classList.add("acid");
+      }
       function youtube() {
         document.getElementById("ifr").src =
           "https://www.youtube-nocookie.com/embed/w3VQUEmsO8M?autoplay=1";

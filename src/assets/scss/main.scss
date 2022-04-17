@@ -21,6 +21,17 @@
     filter: hue-rotate(360deg);
   }
 }
+@keyframes saturbate {
+  0% {
+      filter: saturate(2);
+  }
+  50% {
+      filter: saturate(4);
+  }   
+  100% {
+      filter: saturate(2);
+  }
+}
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -192,9 +203,14 @@ article {
   background: #ffffff;
   color: #000000;
 }
-.rainbow {
+.rainbowtit {  
   animation: hue 8s infinite linear;
-  pointer-events: none;
+}
+.dansen {  
+  animation: saturbate 0.5s infinite;
+}
+.acid {  
+  animation: hue 6s infinite linear;
 }
 .dropdown-content {
   display: flex;
