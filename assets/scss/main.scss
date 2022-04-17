@@ -33,7 +33,7 @@ body {
   height: 100%;
 }
 body {
-  background: url(../../i/bg.png);
+  background: url("/assets/img/bg.png");
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -146,7 +146,7 @@ article {
   display: inline-block;
   width: 13px;
   height: 11px;
-  background-image: url("../../i/sprites.png");
+  background-image: url("/assets/img/sprites.png");
 }
 .prup {
   background-position: 0 0;
@@ -196,7 +196,6 @@ article {
   animation: hue 8s infinite linear;
   pointer-events: none;
 }
-
 .dropdown-content {
   display: flex;
 
@@ -206,11 +205,9 @@ article {
     justify-content: center;
     width: 100%;
     top: 0;
-    padding-left: 52px;
     border-bottom: 1px solid #555555;
   }
 }
-
 #drop {
   align-self: center;
   padding-top: 3px;
