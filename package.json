@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "prebuild": "sass assets/scss/main.scss assets/css/main.css",
-    "build": "vite build",
+    "prebuild": "sass src/assets/scss/main.scss src/assets/css/main.css",
+    "build": "vite build --emptyOutDir",
     "preview": "vite preview"
   },
   "devDependencies": {
