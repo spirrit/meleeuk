@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="the UK smash bros. melee resource" />
     <meta charset="UTF-8" />
-
-    <link href="/assets/css/reset.css" rel="stylesheet" />
     <link href="/assets/scss/main.scss" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,20 +20,34 @@
       <img
         class="rainbowtit"
         src="/assets/img/titleclip.png"
-        style="align-self:baseline;z-index:1;pointer-events:none;"
+        style="align-self: baseline; z-index: 1; pointer-events: none"
         alt="title image that says melee uk"
       />
     </div>
     <div class="dropdown-content">
       <div class="link__wrapper">
-        <a href="javascript:void(0);" class="navlink" onclick="changeHome()">home</a>
-        <a href="javascript:void(0);" class="navlink" id="navranking" onclick="changeRanking()"
+        <a href="javascript:void(0);" class="navlink" onclick="changeHome()"
+          >home</a
+        >
+        <a
+          href="javascript:void(0);"
+          class="navlink"
+          id="navranking"
+          onclick="changeRanking()"
           >ranking</a
         >
-        <a href="javascript:void(0);" class="navlink" id="navlinks" onclick="changeLinks()"
+        <a
+          href="javascript:void(0);"
+          class="navlink"
+          id="navlinks"
+          onclick="changeLinks()"
           >links</a
         >
-        <a href="javascript:void(0);" class="navlink" id="navother" onclick="changeOther()"
+        <a
+          href="javascript:void(0);"
+          class="navlink"
+          id="navother"
+          onclick="changeOther()"
           >other</a
         >
       </div>
@@ -421,12 +433,14 @@
           functionality like a pretty PR table and other stuff
         </p>
         <p>for now you can pet this cat:</p>
-        <div id="cat_container"><img
-          id="feline"
-          src="assets/img/catte.jpg"
-          alt="you are petting the cute cat"
-          onclick="catmagic()"
-        /></div>
+        <div id="cat_container">
+          <img
+            id="feline"
+            src="assets/img/catte.jpg"
+            alt="you are petting the cute cat"
+            onclick="catmagic()"
+          />
+        </div>
       </article>
     </main>
 
@@ -456,19 +470,21 @@
           alt="Discord server invite"
       /></a>
       <a href="https://twitter.com/MeleeUK"
-        ><img class="sqricon" src="assets/img/iconTwitter.png" alt="Melee UK twitter"
+        ><img
+          class="sqricon"
+          src="assets/img/iconTwitter.png"
+          alt="Melee UK twitter"
       /></a>
     </div>
 
     <script type="text/javascript">
-
       const mrow = document.getElementById("feline");
       const meow = document.getElementById("cat_container");
       const cat = new Audio("assets/boing.ogg");
 
       function boing() {
         cat.play();
-      } 
+      }
       function catmagic() {
         boing();
         meow.classList.add("dansen");

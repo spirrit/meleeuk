@@ -1,3 +1,4 @@
+@import "normalize.css";
 @keyframes backgroundScroll {
   0% {
     background-position: 0px 0px;
@@ -66,6 +67,12 @@ img {
 p {
   margin: 0px;
   font-size: 18px;
+}
+ul {
+  padding:0;
+}
+li {
+  list-style-type: none;
 }
 table,
 th,
@@ -234,18 +241,6 @@ article {
   z-index: -1;
   touch-action: none;
 }
-#info {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
-  user-select: none;
-  padding: 8px;
-  color: rgba(255, 255, 255, 0.8);
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 12px;
-}
 #under {
   margin-bottom: 12px;
 }
@@ -279,19 +274,6 @@ article {
   border-bottom: 1px solid #555555;
   z-index: 1;
 }
-#title {
-  display: block;
-
-  width: 153px;
-  height: 47px;
-  margin: auto;
-  padding: 4px;
-  padding-top: 1px;
-  margin-bottom: 1px;
-  background: #000000;
-
-  /*border: 1px solid #555555;*/
-}
 #nav li,
 #nav ul {
   display: flex;
@@ -302,20 +284,6 @@ article {
   height: 15px;
   padding-left: 38px;
   text-align: center;
-}
-
-#navsecret2 {
-  position: relative;
-  border: 1px solid #55555500;
-  background: #ffffff00;
-  color: #00000000;
-  box-shadow: none;
-}
-#navsecret2:hover,
-#navsecret2:focus {
-  border: 1px solid #555555;
-  background: #ffffff;
-  color: #000000;
 }
 #legend {
   margin-bottom: 7px;
