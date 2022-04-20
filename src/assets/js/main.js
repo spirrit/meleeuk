@@ -43,8 +43,10 @@ function changeSecret() {
   pageGrab();
   document.getElementById("secret").style.display = "block";
 }
-document.querySelectorAll('.navlink')[0].addEventListener('click', changeHome)
-document.querySelectorAll('.navlink')[1].addEventListener('click', changeRanking)
-document.querySelectorAll('.navlink')[2].addEventListener('click', changeLinks)
-document.querySelectorAll('.navlink')[3].addEventListener('click', changeOther)
-document.getElementById("feline").addEventListener('click', catMagic)
+document.querySelectorAll(".navlink")[0].addEventListener("click", changeHome);
+document
+  .querySelectorAll(".navlink")[1]
+  .addEventListener("click", changeRanking);
+document.querySelectorAll(".navlink")[2].addEventListener("click", changeLinks);
+document.querySelectorAll(".navlink")[3].addEventListener("click", changeOther);
+document.getElementById("feline").addEventListener("click", catMagic);
