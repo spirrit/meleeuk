@@ -118,6 +118,7 @@ article {
 }
 
 .page_container {
+  scrollbar-gutter: stable both-edges;
   overflow: auto;
 }
 
@@ -137,7 +138,8 @@ article {
 .line {
   font-size: 26px;
   text-shadow: 3px 3px 0px black;
-  padding-left: 9px;
+  padding-left: 8px;
+  margin-bottom: 8px;
 }
 .line2 {
   font-size: 26px;
