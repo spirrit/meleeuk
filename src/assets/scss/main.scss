@@ -1,4 +1,7 @@
 @import "normalize.css";
+
+$borders: #555;
+
 @keyframes backgroundScroll {
   0% {
     background-position: 0px 0px;
@@ -33,6 +36,7 @@
     filter: saturate(2);
   }
 }
+
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -75,7 +79,7 @@ td {
   border: 1px solid;
   border-collapse: separate;
   border-spacing: 1px;
-  border-color: #555555;
+  border-color: $borders;
   font-size: 16px;
   padding: 4px;
 }
@@ -120,15 +124,21 @@ article {
 .page_container {
   scrollbar-gutter: stable both-edges;
   overflow: auto;
+  margin: 0 8px;
 }
 
 .page {
   max-width: 675px;
   display: none;
+  padding: 1px 10px 8px;
   margin-left: auto;
   margin-right: auto;
-  /*background: #070707a8;*/
-  background: none;
+  background: #070707b0;
+  border: 1px $borders;
+  border-style: none solid solid;
+  border-radius: 0% 0% 16px 16px;
+  margin-bottom: 25px;
+  //background: none;
 }
 .page p {
   margin-top: 2px;
@@ -183,7 +193,7 @@ article {
   height: 60px;
   background: #0a0a0a;
   color: #ffffff;
-  border: 1px solid #555555;
+  border: 1px solid $borders;
 }
 .span {
   display: inline-block;
@@ -221,11 +231,11 @@ article {
 
   .link__wrapper {
     display: flex;
-    background: #00000060;
+    background: #000;
     justify-content: center;
     width: 100%;
     top: 0;
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid $borders;
   }
 }
 #drop {
@@ -267,7 +277,7 @@ article {
   height: 50px;
   width: 100%;
   background: #0a0a0a;
-  border-bottom: 1px solid #555555;
+  border-bottom: 1px solid $borders;
   z-index: 1;
 }
 #nav li,
