@@ -12,17 +12,14 @@ function catMagic() {
   meow.classList.add("dansen");
   mrow.classList.add("acid");
 }
-function youtube() {
-  document.getElementById("ifr").src =
-    "https://www.youtube-nocookie.com/embed/w3VQUEmsO8M?autoplay=1";
-}
-var audioCtx = new AudioContext();
+let audioCtx = new AudioContext();
 const panNode = new StereoPannerNode(audioCtx, {
   pan: 0,
 });
-const gainNode = new GainNode(audioCtx, {
+let gainNode = new GainNode(audioCtx, {
   gain: 0.15,
 });
+
 let audioBuffer = null;
 async function createBoopNode() {
   if (!audioBuffer) {
@@ -62,7 +59,20 @@ for (let i = 0; i < navData.length; i++) {
       changePage(navCurrentPage[0], navCurrentPage[1]);
     });
 }
+const element = document.getElementById("vol");
+function mute() {
+  if (gainNode.gain.value != 0) {
+    gainNode.gain.value = 0;
+    element.classList.toggle("vol_on");
+    element.classList.toggle("vol_off");
+  } 
+  else {
+    gainNode.gain.value = 0.15
+    element.classList.toggle("vol_on");
+    element.classList.toggle("vol_off");
+  }
+}
 document.getElementById("feline").addEventListener("click", catMagic);
-
+document.getElementById("vol").addEventListener("click", mute);
 
 createBoopNode();
