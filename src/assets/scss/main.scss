@@ -206,9 +206,9 @@ article {
   background-color: #ffffff;
 }
 .navlink {
-  background: #000000;
-  border-radius: 8px;
-  box-shadow: 1px 0px 2px #777777;
+  background: #000;
+  border: 1px groove $borders;
+  border-radius: 2px;
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
@@ -217,13 +217,15 @@ article {
 }
 .navlink:hover,
 .navlink:focus {
-  background: #ffffff;
+  background: #fff;
   color: #000000;
 }
 .rainbowtit {
+  grid-row: 2;
   grid-column: 2;
   justify-self: center;
   animation: hue 8s infinite linear;
+  
 }
 .dansen {
   animation: saturbate 0.5s infinite;
@@ -249,6 +251,7 @@ article {
   padding: 4px;
   background-origin: content-box;
   background-color: none;
+  grid-row: 2;
   grid-column: 3;
   justify-self: center;
   align-self: center;
@@ -293,13 +296,15 @@ article {
 }
 #nav {
   display: grid;
+  grid-template-rows: 3px auto;
   grid-template-columns: 50px auto 50px;
   //justify-content: center;
   column-gap: 20px;
+
   top: 0;
-  height: 50px;
+
   width: 100%;
-  background: #0a0a0a;
+  background: #000;
   z-index: 1;
 }
 #nav li,
