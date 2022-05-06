@@ -2,24 +2,11 @@
 //
 //import rankingData from '../../players.json'
 import boopSoundUrl from "../sound/boop.ogg";
-import boingSoundUrl from "../sound/boing.ogg";
 
-const mrow = document.getElementById("feline");
-const meow = document.getElementById("cat_container");
-const cat = new Audio(boingSoundUrl);
-function catMagic() {
-  cat.play();
-  meow.classList.add("dansen");
-  mrow.classList.add("acid");
-}
 let audioCtx = new AudioContext();
-const panNode = new StereoPannerNode(audioCtx, {
-  pan: 0,
-});
 let gainNode = new GainNode(audioCtx, {
   gain: 0.15,
 });
-
 let audioBuffer = null;
 async function createBoopNode() {
   if (!audioBuffer) {
@@ -40,8 +27,7 @@ function changePage(pageName, panning) {
   }
   document.getElementById(pageName).style.display = "block";
   createBoopNode().then((sourceNode) => {
-    sourceNode.connect(panNode).connect(gainNode).connect(audioCtx.destination);
-    panNode.pan.value = panning;
+    sourceNode.connect(gainNode).connect(audioCtx.destination);
     sourceNode.start(0);
   });
 }
@@ -57,22 +43,11 @@ for (let i = 0; i < navData.length; i++) {
     .getElementById("nav" + navCurrentPage[0])
     .addEventListener("click", function () {
       changePage(navCurrentPage[0], navCurrentPage[1]);
+      document.getElementById("wrapper").classList.remove("link_wrapper_active");
     });
 }
-const element = document.getElementById("vol");
-function mute() {
-  if (gainNode.gain.value != 0) {
-    gainNode.gain.value = 0;
-    element.classList.toggle("vol_on");
-    element.classList.toggle("vol_off");
-  } 
-  else {
-    gainNode.gain.value = 0.15
-    element.classList.toggle("vol_on");
-    element.classList.toggle("vol_off");
-  }
-}
-document.getElementById("feline").addEventListener("click", catMagic);
-document.getElementById("vol").addEventListener("click", mute);
+document.getElementById("burger").addEventListener("click", function(){
+  document.getElementById("wrapper").classList.toggle("link_wrapper_active");
+});
 
 createBoopNode();

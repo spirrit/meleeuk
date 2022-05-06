@@ -11,30 +11,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
-    <link rel="preload" href="assets/img/vol_off.svg" as="image">
     <!-- brik was here. -->
   </head>
 
   <body>
-    <header>
-      <div class="dropmenu" id="nav">
-        <img
-          class="rainbowtit"
-          src="/assets/img/title.svg"
-          width="155px"
-          style="align-self: baseline; z-index: 1; pointer-events: none"
-          alt="title image that says melee uk"
-        />
-        <button id="vol" class="vol_on"></button>
-      </div>
-      <div class="dropdown-content">
-        <div class="link__wrapper">
+    <header id="nav">
+      <img
+        class="rainbowtit"
+        src="/assets/img/title.svg"
+        width="126px"
+        style="align-self: baseline; z-index: 1; pointer-events: none"
+        alt="title image that says melee uk"
+      />
+      <a href="#" class="side-menu" id="side-menu"></a>
+      <div class="link__wrapper" id="wrapper">
           <a href="javascript:void(0);" class="navlink" id="navhome">home</a>
+          <a href="javascript:void(0);" class="navlink" id="navother">blog</a>
           <a href="javascript:void(0);" class="navlink" id="navranking">ranking</a>
           <a href="javascript:void(0);" class="navlink" id="navlinks">links</a>
-          <a href="javascript:void(0);" class="navlink" id="navother">other</a>
-        </div>
       </div>
+      <div class="hamb" id="burger"><span class="hamb-line"></span></div>
     </header>
     <div class="page_container">
       <main id="home" class="page">
@@ -45,7 +41,6 @@
           <img src="/assets/img/cube.gif" alt="spinning gamecube gif"/>
         </article>
       </main>
-
       <main id="ranking" class="page">
         <div class="centerline">
           <h1 class="line2">UK Melee 2021/22 power rankings</h1>
@@ -83,7 +78,6 @@
             </tr>
           </table>
         </div>
-
         <table>
           <tr>
             <th>Player</th>
@@ -339,7 +333,6 @@
           </tr>
         </table>
       </main>
-
       <main id="links" class="page">
         <article class="centerline">
           <ul>
@@ -356,20 +349,10 @@
           <div class="inner"></div>
         </div>
       </main>
-
       <main id="other" class="page">
-        
-        <div class="centerline" id="cat_container">
-          <p>
-            meow
-          </p>
-          <img
-            id="feline"
-            src="assets/img/catte.jpg"
-            alt="you are petting the cute cat"
-          />
-        </div>
+        <div>
 
+        </div>
       </main>
     </div>
     <script type="module" src="/assets/js/main.js"></script>
