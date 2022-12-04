@@ -50,4 +50,71 @@ document.getElementById("burger").addEventListener("click", function(){
   document.getElementById("wrapper").classList.toggle("link_wrapper_active");
 });
 
+var jsonURL;
+function toggler() {
+  var tbSelecta = this.parentNode.querySelector(".tb");
+  switch (this.parentNode.id) {
+    case "legendsection":
+      jsonURL = "";
+      jsonBourne(tbSelecta, jsonURL);
+    case "pruk21":
+      jsonURL = "/assets/json/pruk21.json";
+      jsonBourne(tbSelecta, jsonURL);
+      break;
+    case "pruk22":
+      jsonURL = "/assets/json/pruk22.json";
+      jsonBourne(tbSelecta, jsonURL);
+      break;
+    case "prscot19":
+      jsonURL = "/assets/json/prscot19.json";
+      jsonBourne(tbSelecta, jsonURL);
+  }
+
+  function jsonBourne(table, jsonURL) {
+    if (table.getElementsByTagName("tr").length < 2) {
+      fetch(jsonURL)
+        .then(function (response) {
+            return response.json();
+        }).then(function (apiJsonData) {
+            console.log(apiJsonData);
+            renderJson(apiJsonData);
+        })
+      function renderJson(players) {
+        players.forEach(entry => {
+            let newRow = document.createElement("tr");
+            Object.values(entry).forEach((value) => {
+                let cell = document.createElement("td");
+                cell.innerHTML = value;
+                newRow.appendChild(cell);
+            })
+            table.appendChild(newRow);
+        });
+      };
+    };
+  }
+  console.log(this.parentNode.id);
+  if (tbSelecta.style.display === "table") {
+    tbSelecta.style.display = "none";
+  } else {
+    tbSelecta.style.display = "table";
+  } // fix this shite so it works across all tables  
+}
+
+
+
+
+
+
+
+
+
+document.querySelectorAll(".tableheader").forEach(item => {
+  item.addEventListener('click', toggler)
+})
+
+
+//var tableArray = document.getElementsByClassName("prTable");
+
+
+
 createBoopNode();

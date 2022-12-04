@@ -1,8 +1,9 @@
 @import "normalize.css";
-$borders: #555;
+$borders: #555555;
+$tableborders: #3a3a3a;
 $text: #fff;
 $bg: #19191a;
-$bg2: #111;
+$bg2: #0000006b;
 
 @keyframes backgroundScroll {
   0% {
@@ -79,10 +80,9 @@ li {
 table,
 th,
 td {
-  border: 1px solid;
-  border-collapse: separate;
-  border-spacing: 1px;
-  border-color: $borders;
+  border: 2px solid;
+  border-collapse: collapse;
+  border-color: $tableborders;
   font-size: 16px;
   padding: 4px;
 }
@@ -137,6 +137,9 @@ article {
     a:focus {
       background: #333;
     }
+    // a:focus-visible {
+    //   outline: 1px solid white;
+    // }
   }
   .link_wrapper_active {
     grid-row: 2;
@@ -184,14 +187,6 @@ article {
   display: none;
   }
 }
-.section {
-  margin: 8px;
-}
-.section2 {
-  margin: 8px;
-  display: flex;
-  flex-flow: row;
-}
 .section p {
   font-size: 15px;
 }
@@ -238,6 +233,7 @@ article {
     border: 1px solid $borders;
     border-top: none;
     border-radius: 0% 0% 10px 10px;
+    padding-bottom: 12px;
   }
 }
 
@@ -309,6 +305,115 @@ article {
 .acid {
   animation: hue 6s infinite linear;
 }
+.ranklink {
+  
+  height: 50px;
+  text-align: center;
+    div {
+      border: 1px solid #555;
+      color: #fff;
+    }
+}
+.btnlegend {
+  width: 85px;
+  color: #45dbf5;
+  font-size: 14px;
+  background: #0716187e;
+  border-radius: 8px;
+  border-top: 2px solid #329eb1;
+  border-left: 2px solid #329eb1;
+  border-right: 2px solid #216174;
+  border-bottom: 2px solid #216174;
+  &:active {
+  border-top: 2px solid #216174;
+  border-left: 2px solid #216174;
+  border-right: 2px solid #329eb1;
+  border-bottom: 2px solid #329eb1;
+  }
+}
+.uksection, .scotsection {
+  background-color: #0000cf27;
+  width: 450px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  border-radius: 8px;
+}
+#pruk21, #pruk22, #prscot19 {
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  margin: auto;
+  // margin-top: 15px;
+  // margin-bottom: 15px;
+  padding-bottom: 10px;
+  flex-flow: row wrap;
+  gap: 10px;
+
+  span {
+    width: 100%;
+    font-size: 18px;
+    user-select: none;
+    pointer-events: none;
+    padding-left: 18px;
+  }
+  button:focus-visible {
+    outline: auto;
+  }
+  .tableheader {
+    width: 80%;
+  }
+  .tableimg {
+    width: 10%;
+  }
+
+  .prbtn {
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .btnuk {
+    color: #f54545;
+    background: #1807077e;
+    border-top: 2px solid #b13232;
+    border-left: 2px solid #b13232;
+    border-right: 2px solid #742121;
+    border-bottom: 2px solid #742121;
+    &:active {
+    border-top: 2px solid #742121;
+    border-left: 2px solid #742121;
+    border-right: 2px solid #b13232;
+    border-bottom: 2px solid #b13232;
+      //box-shadow: inset 0px 0px 15px 2px rgb(48, 214, 255);
+    }
+  }
+  .btnscot {
+    color: #4a5cf8;
+    background: #0708187e;
+    border-top: 2px solid #323fb1;
+    border-left: 2px solid #323fb1;
+    border-right: 2px solid #212674;
+    border-bottom: 2px solid #212674;
+    &:active {
+    border-top: 2px solid #212674;
+    border-left: 2px solid #212674;
+    border-right: 2px solid #323fb1;
+    border-bottom: 2px solid #323fb1;
+    }
+  }
+}
+.tb {
+  min-width: 370px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 35px #000;
+}
+#uktb21, #uktb22, #sctb19 {
+  display: none;
+}
 #vol {
   height: 30px;
   width: 30px;
@@ -369,13 +474,20 @@ article {
   text-align: center;
 }
 #legend {
+  display: none;
   margin-bottom: 7px;
   margin-top: 16px;
+  min-width: auto;
+  
 }
 #legend th,
 #legend td {
   width: 30px;
 }
+#rankscot {
+  display: none;
+}
+
 // desktop
 @media (min-width: 900px) {
   #nav {
