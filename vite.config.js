@@ -1,6 +1,7 @@
-module.exports = {
+export default {
   root: 'src',
   build: {
+    manifest: true,
     outDir: '../dist'
   }
 }
