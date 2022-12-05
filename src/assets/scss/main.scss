@@ -333,7 +333,7 @@ article {
 }
 .uksection, .scotsection {
   background-color: #0000cf27;
-  width: 450px;
+  max-width: 450px;
   margin: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -344,7 +344,7 @@ article {
 #pruk21, #pruk22, #prscot19 {
   display: flex;
   justify-content: center;
-  width: 450px;
+  max-width: 450px;
   margin: auto;
   // margin-top: 15px;
   // margin-bottom: 15px;
@@ -405,7 +405,7 @@ article {
   }
 }
 .tb {
-  min-width: 370px;
+  min-width: 82%;
   margin-top: 8px;
   margin-bottom: 20px;
   box-shadow: 1px 1px 35px #000;
