@@ -367,14 +367,13 @@ article {
   }
   .tableimg {
     width: 10%;
+    user-select: none;
   }
-
   .prbtn {
     display: block;
     text-align: center;
     border-radius: 8px;
   }
-  
   .btnuk {
     color: #f54545;
     background: #1807077e;
