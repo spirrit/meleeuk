@@ -1,6 +1,3 @@
-// add players json imports, perhaps in a seperate file
-//
-//import rankingData from '../../players.json'
 import boopSoundUrl from "../sound/boop.ogg";
 
 let audioCtx = new AudioContext();
@@ -51,9 +48,11 @@ document.getElementById("burger").addEventListener("click", function(){
 });
 
 var jsonURL;
-function toggler() {
+
+function toggler() { //toggles display of sibling table
   var tbSelecta = this.parentNode.querySelector(".tb");
-  switch (this.parentNode.id) {
+  
+  switch (this.parentNode.id) { //determines which button was pressed, passes the right json
     case "legendsection":
       jsonURL = "";
       jsonBourne(tbSelecta, jsonURL);
@@ -70,8 +69,8 @@ function toggler() {
       jsonBourne(tbSelecta, jsonURL);
   }
 
-  function jsonBourne(table, jsonURL) {
-    if (table.getElementsByTagName("tr").length < 2) {
+  function jsonBourne(table, jsonURL) { 
+    if (table.getElementsByTagName("tr").length < 2) { // if first press => populate table with json data
       fetch(jsonURL)
         .then(function (response) {
             return response.json();
@@ -92,12 +91,12 @@ function toggler() {
       };
     };
   }
-  console.log(this.parentNode.id);
+  console.log(this.parentNode.id); // toggle table display [they start as display:none]
   if (tbSelecta.style.display === "table") {
     tbSelecta.style.display = "none";
   } else {
     tbSelecta.style.display = "table";
-  } // fix this shite so it works across all tables  
+  }
 }
 
 
