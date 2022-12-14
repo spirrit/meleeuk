@@ -332,7 +332,8 @@ article {
   }
 }
 .uksection, .scotsection {
-  background-color: #0000cf27;
+  background-color: #041c27b2;
+  //#0000cf27
   max-width: 450px;
   margin: 10px;
   margin-left: auto;
@@ -486,8 +487,6 @@ article {
 #rankscot {
   display: none;
 }
-
-// desktop
 @media (min-width: 900px) {
   #nav {
     .hamb {

@@ -2,6 +2,7 @@ export default {
   root: 'src',
   build: {
     manifest: true,
-    outDir: '../dist'
+    outDir: '../dist',
+    emptyOutDir: 'true'
   }
 }
