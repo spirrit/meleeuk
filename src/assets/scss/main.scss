@@ -110,7 +110,7 @@ article {
 #nav {
   background: #000;
   display: grid;
-  grid-template-rows: 60px auto;
+  grid-template-rows: 57px auto;
   grid-template-columns: 165px auto 50px;
   //justify-content: center;
   border-bottom: 1px solid $borders;
@@ -122,6 +122,11 @@ article {
     display: none;
     flex-direction: row;
     align-items: center;
+    .navlink {
+      &:hover, &:focus {
+        background: #333;
+      }
+    }
     a {
       text-align: center;
       width: 100%;
@@ -133,10 +138,7 @@ article {
       cursor: pointer;
       padding: 20px 0px;
     }
-    a:hover,
-    a:focus {
-      background: #333;
-    }
+
     // a:focus-visible {
     //   outline: 1px solid white;
     // }
@@ -498,9 +500,9 @@ article {
       display: flex;
       flex-direction: row;
       align-items: center;
-      a {
+      .navlink {
         width: auto;
-        padding: 20px 10px;
+        padding: 16px 10px;
         border-left: 1px solid $borders;
       }
     }
