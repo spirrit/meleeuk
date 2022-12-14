@@ -47,30 +47,30 @@ document.getElementById("burger").addEventListener("click", function(){
   document.getElementById("wrapper").classList.toggle("link_wrapper_active");
 });
 
+const buttons = new Array(3);
 var jsonURL;
-
 function toggler() { //toggles display of sibling table
   var tbSelecta = this.parentNode.querySelector(".tb");
-  
-  switch (this.parentNode.id) { //determines which button was pressed, passes the right json
+  var section = this.parentNode.id;
+  switch (section) { //determines which button was pressed, passes the right json
     case "legendsection":
       jsonURL = "";
       jsonBourne(tbSelecta, jsonURL);
     case "pruk21":
       jsonURL = "/assets/json/pruk21.json";
-      jsonBourne(tbSelecta, jsonURL);
+      jsonBourne(tbSelecta, jsonURL, 0);
       break;
     case "pruk22":
       jsonURL = "/assets/json/pruk22.json";
-      jsonBourne(tbSelecta, jsonURL);
+      jsonBourne(tbSelecta, jsonURL, 1);
       break;
     case "prscot19":
       jsonURL = "/assets/json/prscot19.json";
-      jsonBourne(tbSelecta, jsonURL);
+      jsonBourne(tbSelecta, jsonURL, 2);
   }
-
-  function jsonBourne(table, jsonURL) { 
-    if (table.getElementsByTagName("tr").length < 2) { // if first press => populate table with json data
+  function jsonBourne(table, jsonURL, button) { 
+    if (buttons[button] === undefined) { // if first press => populate table with json data
+      buttons[button] = true;
       fetch(jsonURL)
         .then(function (response) {
             return response.json();
@@ -98,22 +98,7 @@ function toggler() { //toggles display of sibling table
     tbSelecta.style.display = "table";
   }
 }
-
-
-
-
-
-
-
-
-
 document.querySelectorAll(".tableheader").forEach(item => {
   item.addEventListener('click', toggler)
 })
-
-
-//var tableArray = document.getElementsByClassName("prTable");
-
-
-
 createBoopNode();
