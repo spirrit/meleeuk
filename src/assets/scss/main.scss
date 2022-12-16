@@ -3,7 +3,7 @@ $borders: #555555;
 $tableborders: #3a3a3a;
 $text: #fff;
 $bg: #19191a;
-$bg2: #0000006b;
+$bg2: #000000;
 
 @keyframes backgroundScroll {
   0% {
@@ -39,7 +39,6 @@ $bg2: #0000006b;
     filter: saturate(2);
   }
 }
-
 html {
   font-family: "Open Sans", sans-serif;
   color: $text;
@@ -51,8 +50,8 @@ body {
   display: flex;
   flex-direction: column;
   background: url("/assets/img/bg.png");
-  background-size: cover;
-  background-position: center;
+
+  background-position: top;
 }
 a {
   text-decoration: none;
@@ -210,8 +209,8 @@ article {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  scrollbar-gutter: stable both-edges;
-  overflow: auto;
+  overflow-y: scroll;
+  
   .sidebar {
     width: 250px;
     flex-shrink: 0;
@@ -221,13 +220,13 @@ article {
   }
   .page {
     flex: 1;
-    max-width: 875px;
+    max-width: 780px;
     width: 100%;
     display: none;
     background: $bg2;
-    box-shadow: 0px 4px 6px #00000026;
-    border-left: 1px solid $borders;
-    border-right: 1px solid $borders;
+    box-shadow: 0px 4px 60px 40px #000000;
+    // border-left: 1px solid $borders;
+    // border-right: 1px solid $borders;
     //border-top: none;
     //border-radius: 0% 0% 10px 10px;
     //padding-bottom: 12px;
