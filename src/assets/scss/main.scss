@@ -3,8 +3,8 @@ $borders: #555555;
 $tableborders: #3a3a3a;
 $text: #fff;
 $bg: #19191a;
-$bg2: #000000;
-
+$bg2: #111111;
+$blue: #00b0e6;
 
 @keyframes backgroundScroll {
   0% {
@@ -41,12 +41,18 @@ $bg2: #000000;
   }
 }
 html {
+  box-sizing: border-box;
+
   font-family: "Open Sans", sans-serif;
   color: $text;
   background-color: $bg;
   font-size: 20px;
 }
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
+
   overflow-y: scroll;
 }
 a {
@@ -218,16 +224,15 @@ article {
     top: 50px;
     //max-height: var(--max-height);
     background: $bg2;
-    box-shadow: 0px 4px 6px #00000026;
-    border-radius: 0% 0% 12px 12px;
+    //box-shadow: 0px 4px 6px #00000026;
+    //border-radius: 0% 0% 12px 12px;
   }
   .page {
 
     //max-width: 780px;
     //width: 100%;
-    flex-grow: 3;
     display: none;
-    background: $bg2;
+    //background: $bg2;
     //box-shadow: 0px 4px 60px 40px #000000;
     // border-left: 1px solid $borders;
     // border-right: 1px solid $borders;
@@ -236,6 +241,10 @@ article {
     //padding-bottom: 12px;
   }
 }
+.footer {
+
+}
+
 
 .page p {
   margin-top: 2px;
