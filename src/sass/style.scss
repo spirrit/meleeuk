@@ -56,11 +56,15 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background: $bg;
+  background: #0e0e0e;
 }
 main {
 
   flex: 1 0 auto;
+}
+blockquote {
+  padding: 1em;
+  border-left: 10px solid #ccc;
 }
 .rainbowtit {
   grid-row: 1;
@@ -112,6 +116,7 @@ main {
   }
 }
 .page-wrapper {
+  background: #151515;
   flex: 1 0 auto;
   min-height: 55vh;
   //max-height: ;
@@ -125,6 +130,20 @@ main {
 .sidebar {
   display: flex;
   flex-direction: column;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+  }
+  li {
+    padding: 5px;
+    padding-left: 10px;
+    &:hover {
+      background: $headfoot;
+    }
+  }
 }
 .page-footer {
   height: 100px;
