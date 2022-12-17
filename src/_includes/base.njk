@@ -25,8 +25,24 @@
     <div class="hamb" id="burger"><span class="hamb-line"></span></div>
   </header>
   {% endblock %}
-  <main>
-    {{ content | safe }}
-  </main>
+  <div class="page-wrapper">
+    <aside class="sidebar">
+      <ul>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+        <li>test</li>
+      </ul>
+    </aside>
+    <main>
+      {{ content | safe }}
+    </main>
+  </div>
+  {% block footer %}
+  <footer class="page-footer">
+    test
+  </footer>
+  {% endblock %}
 </body>
 </html>
