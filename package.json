@@ -1,0 +1,37 @@
+{
+  "name": "meleeuk",
+  "version": "1.1.0",
+  "description": "uk melee hub",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "sass --watch src/sass:dist/css",
+    "build:sass": "sass src/sass:dist/css",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "build:eleventy": "npx @11ty/eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+
+    "11": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "11ty": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spirrit/meleeuk.git"
+  },
+  "keywords": [
+    "20xx"
+  ],
+  "author": "Mel Thornton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spirrit/meleeuk/issues"
+  },
+  "homepage": "https://github.com/spirrit/meleeuk#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.57.0"
+  }
+}
