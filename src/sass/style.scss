@@ -2,6 +2,7 @@ $borders: #444;
 $text: #fff;
 $bg: #333;
 $headfoot: #222;
+$tableborders: #3a3a3a;
 
 @keyframes backgroundScroll {
   0% {
@@ -139,14 +140,68 @@ blockquote {
     list-style: none;
     width: 100%;
   }
-  li {
+  li, details {
     padding: 5px;
     padding-left: 10px;
     &:hover {
       background: $headfoot;
     }
   }
+  #uk::marker {
+    content: url("/assets/img/gb.svg");
+  }
+  #scot::marker {
+    content: url("/assets/img/scot.svg");
+  }
 }
+.tb {
+  background-color: black;
+  border-collapse: collapse;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  tr {
+    background-color: #080808;
+  }
+  td {
+    background-color: #080808;
+  }
+  table, th, td {
+    border: 2px solid;
+
+    border-color: $tableborders;
+    font-size: 16px;
+    padding: 4px;
+  }
+}
+.prup,
+.prdown,
+.prline,
+.prstar,
+.prreturn {
+  display: inline-block;
+  width: 13px;
+  height: 11px;
+  background-image: url("/assets/img/sprites.png");
+}
+.prup {
+  background-position: 0 0;
+}
+.prdown {
+  background-position: -13px 0;
+}
+.prline {
+  background-position: 13px 0;
+}
+.prstar {
+  background-position: -13px -11px;
+}
+.prreturn {
+  background-position: 0 -11px;
+}
+
+
+
 .page-footer {
   height: 80px;
   background: $headfoot;

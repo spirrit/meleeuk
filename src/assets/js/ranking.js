@@ -4,7 +4,7 @@ function tabler() {
   // let jsonURL = document.querySelector(".tb").id;
   switch (table.id) { 
     //determines which button was pressed, passes the right json and array data
-    case "pruk21":
+    case "uktb21":
       jsonURL = "/assets/json/pruk21.json";
       break;
     case "uktb22":

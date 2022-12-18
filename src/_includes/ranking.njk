@@ -1,8 +1,15 @@
 {% extends "base.njk" %}
 {% block sidebar %}
 <ul>
-  <li><a href="/ranking/uk/">United Kingdom</a></li>
-  <li>Scotland</li>
+  <details>
+    <summary id="uk">United Kingdom</summary>
+    <li><a href="/ranking/uk22/">2022</a></li>
+    <li><a href="/ranking/uk21/">2021/22</a></li>
+  </details>
+  <details>
+    <summary id="scot">Scotland</summary>
+    <li>2019</li>
+  </details>
   <li>Wales</li>
   <li>test</li>
   <li>test</li>
