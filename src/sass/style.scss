@@ -50,16 +50,16 @@ html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   color: $text;
-  background-color: $headfoot;
+  background-color: #000;;
   font-size: 20px;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  background: #0e0e0e;
+  background: none;
+  background-image: linear-gradient(rgb(0, 4, 230) 1px,transparent 0),linear-gradient(90deg,rgb(0, 4, 230) 1px,transparent 0);
+  background-size: 2rem 2rem;
+  overflow-y: scroll;
 }
 main {
-
   flex: 1 0 auto;
 }
 blockquote {
@@ -67,8 +67,7 @@ blockquote {
   border-left: 10px solid #ccc;
 }
 .rainbowtit {
-  grid-row: 1;
-  grid-column: 1;
+  width: 126px;
   margin: auto;
   animation: hue 8s infinite linear;
 }
@@ -79,10 +78,13 @@ blockquote {
   top: 0;
   grid-template-rows: 57px auto;
   grid-template-columns: 165px auto 50px;
-  justify-content: center;
+  //justify-content: center;
   //border-bottom: 1px solid $borders;
   //box-shadow: 0px 1px 18px #080808;
   z-index: 1;
+  #navhome {
+    display: flex;
+  }
   .link__wrapper {
     grid-row: 1;
     grid-column: 1 / 4;
@@ -120,7 +122,7 @@ blockquote {
   flex: 1 0 auto;
   min-height: 55vh;
   //max-height: ;
-  max-width: 1440px;
+  max-width: 1200px;
   margin: auto;
   display: grid;
   gap: 1em;
@@ -146,14 +148,14 @@ blockquote {
   }
 }
 .page-footer {
-  height: 100px;
+  height: 80px;
   background: $headfoot;
   flex-shrink: 0;
+  box-shadow: 0 50vh 0 50vh $headfoot;
 }
-
-
 @media (min-width: 900px) {
   #nav {
+    grid-template-columns: 165px auto;
     .hamb {
       display: none;
     }

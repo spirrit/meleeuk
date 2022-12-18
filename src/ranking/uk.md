@@ -1,0 +1,13 @@
+---
+title: UK Melee rankings page
+layout: subranking.njk
+---
+test
+<table id="uktb22" class="tb">
+  <tr>
+    <th>Player</th>
+    <th>Rank</th>
+    <th>Move</th>
+    <th>Character/s</th>
+  </tr>
+</table>
