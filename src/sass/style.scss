@@ -32,6 +32,17 @@ $shine: #00b0e6;
     filter: hue-rotate(360deg);
   }
 }
+@keyframes hue2 {
+  from {
+    filter: hue-rotate(0deg) saturate(6);
+    transform: rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg) saturate(6);
+    transform: rotate(360deg);
+  }
+}
 @keyframes saturbate {
   0% {
     filter: saturate(2);
@@ -74,6 +85,9 @@ a {
 blockquote {
   padding: 1em;
   border-left: 10px solid #ccc;
+}
+.rainbow {
+  animation: hue2 4s infinite linear;
 }
 .rainbowtit {
   width: 126px;
