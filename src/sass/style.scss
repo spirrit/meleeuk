@@ -1,8 +1,8 @@
 $borders: #444;
 $text: #fff;
 $bg: #333;
-$headfoot: #00405381;
-$hfhover: #00405331;
+$headfoot: #00303fe8;
+$hfhover: #00455a48;
 
 $tableborders: #004053;
 $tablecell: #000b0f;
@@ -88,7 +88,7 @@ blockquote {
   display: grid;
   position: sticky;
   top: 0;
-  grid-template-rows: 57px auto;
+  grid-template-rows: 75px auto;
   grid-template-columns: 165px auto 50px;
   //justify-content: center;
   //border-bottom: 1px solid $borders;
@@ -106,7 +106,7 @@ blockquote {
     .navlink {
       text-decoration: none;
       &:hover, &:focus {
-        background: #333;
+        background: $hfhover;
         //border-top: 1px solid $borders;
         //border-bottom: 1px solid $borders;
       }
@@ -132,7 +132,7 @@ blockquote {
 .page-wrapper {
   background: #0028357e;
   flex: 1 0 auto;
-  min-height: calc(100vh - 157px);
+  min-height: calc(100vh - 175px);
   //max-height: ;
   max-width: 1000px;
   margin: auto;
@@ -184,8 +184,10 @@ blockquote {
   }
 }
 .tb {
+  width: 350px;
   background-color: black;
   border-collapse: collapse;
+  
   tr {
     background-color: $tablecell2;
   }
@@ -231,7 +233,7 @@ blockquote {
   height: 100px;
   background: $headfoot;
   flex-shrink: 0;
-  box-shadow: 0 50vh 0 50vh $headfoot;
+  //box-shadow: 0 50vh 0 50vh $headfoot;
   font-size: 18px;
   p {
     margin: 0;
