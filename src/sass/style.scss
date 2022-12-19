@@ -1,8 +1,13 @@
 $borders: #444;
 $text: #fff;
 $bg: #333;
-$headfoot: #222;
-$tableborders: #3a3a3a;
+$headfoot: #00405381;
+$hfhover: #00405331;
+
+$tableborders: #004053;
+$tablecell: #000b0f;
+$tablecell2: #004053;
+$shine: #00b0e6;
 
 @keyframes backgroundScroll {
   0% {
@@ -56,8 +61,8 @@ html {
 }
 body {
   background: none;
-  background-image: linear-gradient(rgb(0, 4, 230) 1px,transparent 0),linear-gradient(90deg,rgb(0, 4, 230) 1px,transparent 0);
-  background-size: 2rem 2rem;
+  background-image: linear-gradient(45deg, #004e818e 1px,transparent 0);
+  background-size: 0.5rem 0.5rem;
   overflow-y: scroll;
 }
 a {
@@ -125,9 +130,9 @@ blockquote {
   }
 }
 .page-wrapper {
-  background: #151515;
+  background: #0028357e;
   flex: 1 0 auto;
-  min-height: 75vh;
+  min-height: calc(100vh - 157px);
   //max-height: ;
   max-width: 1000px;
   margin: auto;
@@ -139,9 +144,9 @@ blockquote {
 .sidebar {
   display: none;
   flex-direction: column;
-  border-right: 2px solid $headfoot;
+  border-right: 1px solid $headfoot;
   details:hover {
-    background: $headfoot;
+    background: $hfhover;
   }
   ul {
     margin: 0;
@@ -182,10 +187,10 @@ blockquote {
   background-color: black;
   border-collapse: collapse;
   tr {
-    background-color: #080808;
+    background-color: $tablecell2;
   }
   td {
-    background-color: #080808;
+    background-color: $tablecell;
   }
   table, th, td {
     border: 2px solid;
