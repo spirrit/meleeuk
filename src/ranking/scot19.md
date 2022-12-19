@@ -3,9 +3,7 @@ title: UK Melee rankings page
 layout: subranking.njk
 ---
 
-uk melee 2022 ranking
-
-<table id="uktb22" class="tb">
+<table id="scottb19" class="tb">
   <tr>
     <th>Player</th>
     <th>Rank</th>

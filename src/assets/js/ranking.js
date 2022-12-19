@@ -10,7 +10,7 @@ function tabler() {
     case "uktb22":
       jsonURL = "/assets/json/pruk22.json";
       break;
-    case "prscot19":
+    case "scottb19":
       jsonURL = "/assets/json/prscot19.json";   
     default:
       console.log("nojson");
