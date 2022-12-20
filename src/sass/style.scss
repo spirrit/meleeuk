@@ -189,16 +189,18 @@ blockquote {
   margin: auto;
   display: grid;
   gap: 1em;
-  grid-template-areas: "main";
-  grid-template-columns: minmax(0,4fr);
+  grid-template-areas: "sidebar main";
+  grid-template-columns: minmax(10px,0.4fr) minmax(0,4fr);
 }
 .sidebar {
-  display: none;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 75px auto;
+  grid-template-columns: auto;
   border-right: 1px solid $headfoot;
   details:hover {
     background: $hfhover;
   }
+  > ul {display: none;}
   ul {
     margin: 0;
     padding: 0;
@@ -232,6 +234,43 @@ blockquote {
     width: 20px;
     display: inline-block;
     content: url("/assets/img/scot.svg");
+  }
+}
+#sidebar-burger {
+  grid-row: 1;
+  .line {
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 10px;
+    margin: auto;
+    top: 48%;
+      &::before,
+      &::after {
+      //left: 2px;
+      background: #fff;
+      content: "";
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    &::before{
+      transform: rotate(-45deg);
+      top: 3px;
+    }
+    &::after{
+      transform: rotate(45deg);
+      top: -3px;
+    }
+  }
+
+}
+.sidebar-active {
+  grid-template-areas: "sidebar main";
+  grid-template-columns: minmax(200px,0.5fr) minmax(0,4fr);
+  .sidebar > ul {
+    display: block;
   }
 }
 .tb {
@@ -309,6 +348,14 @@ blockquote {
   }
   .sidebar {
     display: flex;
+    flex-direction: column;
+    > ul {
+    display: block;
+    }
+    #sidebar-burger .line {
+      display: none;
+    }
+    
   }
   #nav {
     grid-template-columns: 165px auto;
