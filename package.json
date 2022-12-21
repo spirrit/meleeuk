@@ -9,7 +9,8 @@
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "build:eleventy": "npx @11ty/eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
-
+    
+    "build": "npx @11ty/eleventy",
     "11": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1",
     "11ty": "npx @11ty/eleventy --serve"

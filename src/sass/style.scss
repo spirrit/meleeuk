@@ -277,7 +277,6 @@ blockquote {
   width: 350px;
   background-color: black;
   border-collapse: collapse;
-  
   tr {
     background-color: $tablecell2;
   }
@@ -285,6 +284,7 @@ blockquote {
     background-color: $tablecell;
   }
   table, th, td {
+    border-radius: 7px;
     border: 2px solid;
     border-color: $tableborders;
     font-size: 16px;
