@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+{% block sidebar %}
+<ul>
+  <details open>
+    <summary id="uk"> United Kingdom</summary>
+    <li><a href="/ranking/uk22/">2022</a></li>
+    <li><a href="/ranking/uk21/">2021/22</a></li>
+  </details>
+  <details open>
+    <summary id="scot"> Scotland</summary>
+    <li><a href="/ranking/scot22/">2022</a></li>
+    <li><a href="/ranking/scot19/">2019</a></li>
+  </details>
+  <li>Wales</li>
+  <li>Northern Ireland</li>
+</ul>
+{% endblock %}
+{% block script %}
+<script src="/assets/js/base.js"></script>
+{% endblock %}
