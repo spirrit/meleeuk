@@ -5,4 +5,4 @@ layout: ranking.njk
 
 # UK Melee Power Rankings
 
-Pick a ranking on the left to see the 
+Pick a ranking on the left to see how our players stacked up for that ranking season!
