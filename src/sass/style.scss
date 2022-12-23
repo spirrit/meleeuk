@@ -1,6 +1,7 @@
 $borders: #444;
 $text: #fff;
 $bg: #333;
+$linkcolour: #aaa;
 $headfoot: #00303fe8;
 $hfhover: #00455a48;
 
@@ -79,7 +80,7 @@ body {
 a {
   text-decoration: none;
   &:link, &:visited, &:active {
-    color: #aaa;
+    color: $linkcolour;
   }
 }
 blockquote {
@@ -223,6 +224,7 @@ blockquote {
     padding-right: 0;
     &:hover {
       text-decoration: underline;
+      text-decoration-color: $linkcolour;
     }
     a {
       display: block;
