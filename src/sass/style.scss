@@ -313,6 +313,10 @@ blockquote {
     }
   }
 }
+.indeximg {
+  max-width: 100%;
+  height: auto;
+}
 @media (max-width: 800px) {
   .page-wrapper {
     grid-template-areas: "sidebar main";
