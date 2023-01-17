@@ -206,50 +206,22 @@ blockquote {
   }
 }
 .sidebar {
-  // display: grid;
-  // grid-template-rows: 75px auto;
-  // grid-template-columns: auto;
-  display: flex;
-  flex-direction: column;
   border-right: 1px solid $headfoot;
-  details:hover {
-    background: $hfhover;
+  .sideimg {
+    width: 20px;
   }
-  > ul {display: block;}
   ul {
     margin: 0;
     padding: 0;
-    list-style: none;
     width: 100%;
   }
-  li, details {
+  li {
     padding: 5px 0;
     padding-left: 10px;
-  }
-  li {
-    
-    padding-right: 0;
     &:hover {
       text-decoration: underline;
       text-decoration-color: $linkcolour;
     }
-    a {
-      display: block;
-    }
-  }
-  summary {
-      list-style: none;
-  }
-  #uk::before {
-    display: inline-block;
-    width: 20px;
-    content: url("/assets/img/gb.svg");
-  }
-  
-  #scot::before {
-    width: 20px;
-    display: inline-block;
-    content: url("/assets/img/scot.svg");
   }
 }
 #sidebar-burger .line {
