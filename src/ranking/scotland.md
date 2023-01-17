@@ -9,8 +9,3 @@ Scotland hall of fame 🏆
   <button class="btn" id="scot22">2022</button>
   <button class="btn" id="scot19">2019</button>
 </div>
-
-<div class="tbwrapper">
-  <table class="tb" id="ranktb">
-  </table>
-</div>

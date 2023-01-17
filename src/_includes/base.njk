@@ -39,6 +39,8 @@
       </aside>
       <main>
         {{ content | safe }}
+        {% block after %}
+        {% endblock %}
       </main>
     </div>
     <footer class="page-footer">

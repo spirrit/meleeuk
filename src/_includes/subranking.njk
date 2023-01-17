@@ -1,4 +1,11 @@
 {% extends "ranking.njk" %}
+{% block after %}
+<div class="tbwrapper">
+  <table class="tb" id="ranktb">
+  </table>
+</div>
+{% endblock %}
+
 {% block script %}
 <script src="/assets/js/ranking.js"></script>
 {% endblock %}

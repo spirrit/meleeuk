@@ -10,8 +10,3 @@ UK hall of fame 🏆
   <button class="btn" id="uk21">2021 / 2022</button>
   <button class="btn" id="uk19">2019 winter</button>
 </div>
-
-<div class="tbwrapper">
-  <table class="tb" id="ranktb">
-  </table>
-</div>
