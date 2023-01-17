@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Glaikit",
+    "rank": 1,
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "Falco"
+  },
+  {
+    "name": "ShiftingShadows",
+    "rank": 2,
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "C. Falcon"
+  },
+  {
+    "name": "stylo",
+    "rank": 3,
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Puff"
+  },
+  {
+    "name": "Jacob",
+    "rank": 4,
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Samus"
+  },
+  {
+    "name": "TTS",
+    "rank": 5,
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "C. Falcon"
+  },
+  {
+    "name": "Phade",
+    "rank": 6,
+    "move_type": "<div class=\"prdown\"></div> 4",
+    "char": "Marth"
+  },
+  {
+    "name": "Ryzon",
+    "rank": 7,
+    "move_type": "<div class=\"prup\"></div> 2",
+    "char": "Fox"
+  },
+  {
+    "name": "Jude",
+    "rank": 8,
+    "move_type": "<div class=\"prline\"></div>",
+    "char": "Fox"
+  },
+  {
+    "name": "Maskless",
+    "rank": 9,
+    "move_type": "<div class=\"prdown\"></div> 6",
+    "char": "Fox"
+  },
+  {
+    "name": "cleo",
+    "rank": 10,
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Sheik"
+  }
+]

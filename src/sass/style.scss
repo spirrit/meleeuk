@@ -3,9 +3,12 @@ $text: #fff;
 $bg: #333;
 $linkcolour: #aaa;
 $headfoot: #00303fe8;
+$headfoot2: #00303f59;
+$hfbutton: #0041554f;
+$hfbutton2: #00435794;
 $hfhover: #00455a48;
 
-$tableborders: #004053;
+$tableborders: #003849;
 $tablecell: #000b0f;
 $tablecell2: #004053;
 $shine: #00b0e6;
@@ -82,6 +85,10 @@ a {
   &:link, &:visited, &:active {
     color: $linkcolour;
   }
+}
+button {
+  font-family : inherit;
+  font-size: 1em;
 }
 blockquote {
   padding: 1em;
@@ -249,22 +256,32 @@ blockquote {
   display: none;
 }
 .tb {
-  width: 350px;
+  width: 295px;
   background-color: black;
   border-collapse: collapse;
+  .play {width: 45%;}
+  .rank {width: 10%;}
+  .move {width: 15%;}
+  .char {width: 30%;}
+  border: 2px solid $tableborders;
+  thead {
+    width:100%;
+  }
   tr {
-    background-color: $tablecell2;
+    background-color: $tableborders;
   }
   td {
     background-color: $tablecell;
   }
-  table, th, td {
-    border-radius: 7px;
-    border: 2px solid;
+  th, td {
+    border: 1px dotted;
     border-color: $tableborders;
-    font-size: 16px;
+    font-size: 0.85em;
     padding: 4px;
   }
+}
+.tbwrapper {
+  height: 800px;
 }
 .prup,
 .prdown,
@@ -317,10 +334,43 @@ blockquote {
   max-width: 100%;
   height: auto;
 }
+.rankingbtn {
+  display: flex;
+  gap: 1px;
+  .btn {
+    color: #fff;
+    background: $hfbutton;
+    height: 3em;
+    width: 3.5em;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background: $hfbutton2;
+    }
+  }
+}
+.btn.current {
+  font-weight: 700;
+  background-color: $tableborders;
+  &:hover {
+    background: $tableborders;
+  }
+}
 @media (max-width: 800px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    background-size: 0.6rem 0.6rem;
+  }
   .page-wrapper {
     grid-template-areas: "sidebar main";
-    grid-template-columns: minmax(10px,0.4fr) minmax(0,4fr);
+    grid-template-columns: 100%;
+    grid-template-rows: 35px auto;
+    gap: 0;
+    main {
+      grid-row: 2;
+    }
   }
   #nav {
     grid-template-columns: 165px auto 70px;
@@ -353,40 +403,26 @@ blockquote {
     }
   }
   .sidebar {
-    display: grid;
-    grid-template-rows: 75px auto;
-    grid-template-columns: auto;
     > ul {
-    display: none;
-    }
-    #sidebar-burger {
-      grid-row: 1;
-      .line {
-        display: block;
-        height: 2px;
-        position: relative;
-        width: 10px;
-        margin: auto;
-        top: 48%;
-          &::before,
-          &::after {
-          //left: 2px;
-          background: #fff;
-          content: "";
-          height: 100%;
-          position: absolute;
-          transition: all .2s ease-out;
-          width: 100%;
-        }
-        &::before{
-          transform: rotate(-45deg);
-          top: 3px;
-        }
-        &::after{
-          transform: rotate(45deg);
-          top: -3px;
-        }
+      display: flex;
+      height: 100%;
+
+      li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        white-space: pre;
+
+        
       }
+      img {
+        display: inline-block;
+        //height: 100%;
+      }
+    }
+    background: $headfoot2;
+    #sidebar-burger {
+      display: none;
     }
   }
   .sidebar-active {
