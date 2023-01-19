@@ -59,7 +59,6 @@ $shine: #00b0e6;
   }
 }
 
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -199,11 +198,9 @@ blockquote {
   grid-template-columns: minmax(175px,0.5fr) minmax(0,4fr);
   main{
     a {
-      transition: .2s ease;
       &:hover {
         color: #1dddff;
         animation: hue 2s infinite linear;
-        transform: scale(1.5);
       }
     }
     h1 {
