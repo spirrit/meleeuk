@@ -3,7 +3,7 @@ title: UK Melee rankings page
 layout: subranking.njk
 ---
 
-UK hall of fame 🏆
+<p style="text-align: center;">UK hall of fame 🏆</p>
 
 <div class="rankingbtn">
   <button class="btn" id="uk22">2022</button>

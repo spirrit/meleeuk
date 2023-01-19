@@ -3,9 +3,21 @@
 <div class="tbwrapper">
   <table class="tb" id="ranktb">
   </table>
+  <div id="f" class="imgsection">
+    <div class="imgwrapper">
+      <strong><p class="titlep">PR art</p></strong>
+      <a id="overlay" href="#" target="_blank"><div class="overlay">
+        <img id="rankimg">
+        <div class="afterwrap"></div><img class="afterimg" src="/assets/img/opennew.svg">
+      </div></a>
+    </div>
+    <div class="imgwrapper">
+      <p id="rankp"></p>
+    </div>
+  </div>
 </div>
 {% endblock %}
 
 {% block script %}
-<script src="/assets/js/ranking.js"></script>
+<script type="module" src="/assets/js/ranking.js"></script>
 {% endblock %}

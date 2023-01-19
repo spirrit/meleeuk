@@ -1,3 +1,4 @@
+import * as twitter from "./twitter.js";
 const table = document.getElementById("ranktb");
 let btn = document.querySelectorAll(".btn");
 const buttons = Array.from(btn);
@@ -5,6 +6,8 @@ const tableLoad = [false,false,false];
 const tables = new Array(3);
 let jsonURL;
 let active;
+let img;
+let imgxl;
 
 function tabler(id) { 
   switch (id.id) { 
@@ -12,26 +15,40 @@ function tabler(id) {
     case "uk22":
       active = 0;
       jsonURL = "/assets/json/pruk22.json";
+      img = "/assets/img/pruk22s.jpg";
+      imgxl = "/assets/img/pruk22.jpg";
       break;    
     case "uk21":
       active = 1;
       jsonURL = "/assets/json/pruk21.json";
+      img = "/assets/img/pruk21s.jpg";
+      imgxl = "/assets/img/pruk21.jpg";
       break;
     case "uk19":
       active = 2;
       jsonURL = "/assets/json/pruk19.json";
+      img = "/assets/img/pruk19ws.jpg";
+      imgxl = "/assets/img/pruk19w.jpg";
       break;
     case "scot22":
       active = 0;
       jsonURL = "/assets/json/prscot22.json";
+      img = "/assets/img/prscot22s.jpg";
+      imgxl = "/assets/img/prscot22.jpg";
       break;
     case "scot19":
       active = 1;
       jsonURL = "/assets/json/prscot19.json";
+      img = "/assets/img/prscot19s.jpg";
+      imgxl = "/assets/img/prscot19.jpg";
       break;
     default:
       console.log("nojson");
   }
+  let twt = id.id;
+  document.getElementById("overlay").href=imgxl;
+  document.getElementById("rankp").innerHTML = twitter[twt];
+  document.getElementById("rankimg").src=img;
   buttonHandler(active);
   jsonHandler(active, jsonURL);
 }
