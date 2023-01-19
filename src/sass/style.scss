@@ -101,7 +101,7 @@ blockquote {
 .rainbowtit {
   width: 126px;
   margin: auto;
-  animation: hue 8s infinite linear;
+  //animation: hue 8s infinite linear;
 }
 #nav {
   background: $headfoot;
@@ -198,6 +198,14 @@ blockquote {
   grid-template-areas: "sidebar main";
   grid-template-columns: minmax(175px,0.5fr) minmax(0,4fr);
   main{
+    a {
+      transition: .2s ease;
+      &:hover {
+        color: #1dddff;
+        animation: hue 2s infinite linear;
+        transform: scale(1.5);
+      }
+    }
     h1 {
       font-size: 1.7em;
     }
@@ -268,37 +276,39 @@ blockquote {
     .imgwrapper {
       background: $tablecell;
       border: 2px solid $tableborders;
-
       .overlay {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        .afterwrap {
-          &:hover {
-            background: #000000bb;
-          }
-          &:hover + .afterimg {
-            display: block;
-          }
-        }
-
-        .afterimg {
-          position: absolute;
-          display: none;
-          color: #fff;
-        }
+        margin: 2px;
         .afterwrap {
           position: absolute;
           top: 0;
           left: 0;
-          width: 100%;
           height: 100%;
-          
+          width: 100%;
+          opacity: 0;
+          transition: .3s ease;
+          &:hover {
+            background: #000000ab;
+            opacity: 1;
+          }
+          &:hover + .afterimg {
+            display: block;
+            opacity: 1;
+          }
+        }
+        .afterimg {
+          position: absolute;
+          color: #fff;
+          pointer-events: none;
+          opacity: 0;
+          transition: .2s ease;
         }
       }
       #rankimg {
-        margin: 2px;
+        
         display: block;
         width: 250px;
       }
