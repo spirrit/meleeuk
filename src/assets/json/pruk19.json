@@ -1,151 +1,151 @@
 [
   {
-    "name": "Professor Pro",
     "rank": 1,
+    "name": "Professor Pro",
     "move_type": "<div class=\"prline\"></div>",
     "char": "Fox"
   },
   {
-    "name": "Setchi",
     "rank": 2,
+    "name": "Setchi",
     "move_type": "<div class=\"prup\"></div> 1",
     "char": "C. Falcon"
   },
   {
-    "name": "Frenzy",
     "rank": 3,
+    "name": "Frenzy",
     "move_type": "<div class=\"prdown\"></div> 1",
     "char": "Falco"
   },
   {
-    "name": "Isdsar",
     "rank": 4,
+    "name": "Isdsar",
     "move_type": "<div class=\"prup\"></div> 3",
     "char": "C. Falcon"
   },
   {
-    "name": "Fat Tino",
     "rank": 5,
+    "name": "Fat Tino",
     "move_type": "<div class=\"prup\"></div> 3",
     "char": "Falco"
   },
   {
-    "name": "MINT",
     "rank": 6,
+    "name": "MINT",
     "move_type": "<div class=\"prreturn\"></div>",
     "char": "Fox"
   },
   {
-    "name": "Alpha Dash",
     "rank": 7,
+    "name": "Alpha Dash",
     "move_type": "<div class=\"prreturn\"></div>",
     "char": "ICs"
   },
   {
-    "name": "Aiken",
     "rank": 8,
+    "name": "Aiken",
     "move_type": "<div class=\"prstar\"></div>",
     "char": "Marth"
   },
   {
-    "name": "Tooni",
     "rank": 9,
+    "name": "Tooni",
     "move_type": "<div class=\"prreturn\"></div>",
     "char": "Fox"
   },
   {
-    "name": "R23",
     "rank": 10,
+    "name": "R23",
     "move_type": "<div class=\"prdown\"></div> 5",
     "char": "Sheik"
   },
   {
-    "name": "23",
     "rank": 11,
+    "name": "23",
     "move_type": "<div class=\"prup\"></div> 10",
     "char": "Fox"
   },
   {
-    "name": "10 Quid Shoes",
     "rank": 12,
+    "name": "10 Quid Shoes",
     "move_type": "<div class=\"prup\"></div> 13",
     "char": "Marth"
   },
   {
-    "name": "Bomboni",
     "rank": 13,
+    "name": "Bomboni",
     "move_type": "<div class=\"prdown\"></div> 3",
     "char": "C. Falcon"
   },
   {
-    "name": "Mordo",
     "rank": 14,
+    "name": "Mordo",
     "move_type": "<div class=\"prdown\"></div> 3",
     "char": "Falco"
   },
   {
-    "name": "Okameed",
     "rank": 15,
+    "name": "Okameed",
     "move_type": "<div class=\"prup\"></div> 1",
     "char": "Pikachu"
   },
   {
-    "name": "Laurster",
     "rank": 16,
+    "name": "Laurster",
     "move_type": "<div class=\"prreturn\"></div>",
     "char": "Peach"
   },
   {
-    "name": "Branspeed",
     "rank": 17,
+    "name": "Branspeed",
     "move_type": "<div class=\"prdown\"></div> 3",
     "char": "Marth"
   },
   {
-    "name": "Rash Attack",
     "rank": 18,
+    "name": "Rash Attack",
     "move_type": "<div class=\"prdown\"></div> 6",
     "char": "Dr. Mario"
   },
   {
-    "name": "Kidder",
     "rank": 19,
+    "name": "Kidder",
     "move_type": "<div class=\"prdown\"></div> 2",
     "char": "Sheik"
   },
   {
-    "name": "BARRYBONES",
     "rank": 20,
+    "name": "BARRYBONES",
     "move_type": "<div class=\"prreturn\"></div>",
     "char": "Sheik"
   },
   {
-    "name": "Skuxxyy",
     "rank": 21,
+    "name": "Skuxxyy",
     "move_type": "<div class=\"prdown\"></div> 12",
     "char": "Puff"
   },
   {
-    "name": "GG",
     "rank": 22,
+    "name": "GG",
     "move_type": "<div class=\"prdown\"></div> 7",
     "char": "Puff"
   },
   {
-    "name": "Silas",
     "rank": 23,
+    "name": "Silas",
     "move_type": "<div class=\"prline\"></div>",
     "char": "Peach"
   },
   {
-    "name": "Captain Nebula",
     "rank": 24,
+    "name": "Captain Nebula",
     "move_type": "<div class=\"prline\"></div>",
     "char": "Luigi"
   },
   {
-    "name": "Beau",
     "rank": 25,
+    "name": "Beau",
     "move_type": "<div class=\"prdown\"></div> 4",
     "char": "Fox"
   }

@@ -69,7 +69,7 @@ function buttonHandler(active) {
 }
 function jsonHandler(arr, json) {
   table.replaceChildren();
-  table.innerHTML = "<thead><tr><th class=\"play\">Player</th><th class=\"rank\"></th><th class=\"move\">+/-</th><th class=\"char\">Char/s</th></tr></thead>";
+  table.innerHTML = "<thead><tr><th class=\"rank\"></th><th class=\"play\">Player</th><th class=\"move\">+/-</th><th class=\"char\">Char/s</th></tr></thead>";
   if (tableLoad[arr] == false) {
     tableLoad[arr] = true;
     jsonBourne(arr, json);

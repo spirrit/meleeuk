@@ -1,61 +1,61 @@
 [
   {
-    "name": "Phade",
     "rank": 1,
+    "name": "Phade",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 1",
     "char": "Marth"
   },
   {
-    "name": "Glaikit",
     "rank": 2,
+    "name": "Glaikit",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 5",
     "char": "Falco"
   },
   {
-    "name": "Maskless",
     "rank": 3,
+    "name": "Maskless",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 1",
     "char": "Fox"
   },
   {
-    "name": "PatSheezy",
     "rank": 4,
+    "name": "PatSheezy",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 8",
     "char": "Sheik"
   },
   {
-    "name": "Johnny Turbo",
     "rank": 5,
+    "name": "Johnny Turbo",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 4",
     "char": "C.Falcon"
   },
   {
-    "name": "Graeme",
     "rank": 6,
+    "name": "Graeme",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 8",
     "char": "Marth"
   },
   {
-    "name": "Socks",
     "rank": 7,
+    "name": "Socks",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 1",
     "char": "Sheik/Samus"
   },
   {
-    "name": "Jude",
     "rank": 8,
+    "name": "Jude",
     "move_type": "<div class=\"prstar\" aria-label=\"newcomer to the rankings\"></div>",
     "char": "Fox"
   },
   {
-    "name": "Ryzon",
     "rank": 9,
+    "name": "Ryzon",
     "move_type": "<div class=\"prup\" aria-label=\"rank increased since last ranking\"></div> 6",
     "char": "Fox"
   },
   {
-    "name": "Swish",
     "rank": 10,
+    "name": "Swish",
     "move_type": "<div class=\"prstar\" aria-label=\"newcomer to the rankings\"></div>",
     "char": "Marth"
   }
