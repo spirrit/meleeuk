@@ -4,14 +4,15 @@ $bg: #333;
 $linkcolour: #aaa;
 $headfoot: #00303fe8;
 $headfoot2: #00303f59;
-$hfbutton: #0041554f;
-$hfbutton2: #00435794;
+$button: #002431;
+$button2: #004357;
+$buttoncurrent: #004357;
 $hfhover: #00455a48;
-
 $tableborders: #003849;
 $tablecell: #000b0f;
 $tablecell2: #004053;
 $shine: #00b0e6;
+$boxxy: -4px 4px #00090c8a;
 
 @keyframes backgroundScroll {
   0% {
@@ -236,44 +237,59 @@ blockquote {
 }
 .tb {
   width: 295px;
-  background-color: black;
   border-collapse: collapse;
-  .play {width: 45%;}
-  .rank {width: 10%;}
+  .play {width: 46%;}
+  .rank {width: 9%;}
   .move {width: 15%;}
   .char {width: 30%;}
-  border: 2px solid $tableborders;
+  border: 1px solid $tableborders;
+  box-shadow: $boxxy;
   thead {
     width:100%;
+    border: none;
   }
   tr {
     background-color: $tableborders;
   }
   td {
     background-color: $tablecell;
+    &:nth-child(4n - 3) {
+      font-weight: 700;
+      background-color: #00141a;
+      text-shadow: #000 -1px 1px;      
+      border-left: none;
+    }
   }
   th, td {
     border: 1px dotted;
+    border-right: none;
+    border-bottom: none;
     border-color: $tableborders;
     font-size: 0.85em;
     padding: 4px;
+  }
+  th {
+    border: none;
   }
 }
 .tbwrapper {
   max-height: 800px;
   margin-bottom: 20px;
   display: flex;
-  gap: 2px;
+  gap: 10px;
   align-items: flex-start;
   justify-content: center;
   .imgsection {
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    width: 258px;
+    gap: 10px;
+    width: 256px;
+    > * {
+      box-shadow: $boxxy;
+     }
     .imgwrapper {
       background: $tablecell;
-      border: 2px solid $tableborders;
+      border: 1px solid $tableborders;
       .overlay {
         position: relative;
         display: flex;
@@ -306,12 +322,9 @@ blockquote {
         }
       }
       #rankimg {
-        
         display: block;
-        width: 250px;
+        width: 100%;
       }
-
-
       p {
         margin: 0;
         padding: 4px;
@@ -375,25 +388,27 @@ blockquote {
 .rankingbtn {
   display: flex;
   justify-content: center;
-  //gap: 1px;
-  margin: 2px;
+  gap: 0.5em;
+  margin: 8px;
   .btn {
     color: #fff;
-    background: $hfbutton;
+    background: $button;
     height: 3em;
     width: 4.5em;
     border: none;
     cursor: pointer;
+    box-shadow: $boxxy;
+    text-shadow: #000 -1px 1px;
     &:hover {
-      background: $hfbutton2;
+      background: $button2;
     }
   }
 }
 .btn.current {
   font-weight: 700;
-  background-color: $tableborders;
+  background-color: $buttoncurrent;
   &:hover {
-    background: $tableborders;
+    background: $buttoncurrent;
   }
 }
 @media (max-width: 750px) {
