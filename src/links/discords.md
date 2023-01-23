@@ -7,8 +7,14 @@ layout: links.njk
 
 national:  
 [uk melee discord](https://discord.melee.uk)  
-[scotland melee discord](https://scotland.melee.uk)
+[scotland melee discord](https://scotland.melee.uk)  
 
 local:  
+[northern melee discord](https://discord.gg/ZYGDeQzZK9)  
 [birmingham discord](https://bham.melee.uk)  
-[nottingham discord](https://discord.gg/eTYjVeNyhq)
+[nottingham discord](https://discord.gg/eTYjVeNyhq)  
+[reading discord](https://discord.com/invite/49eZvVzCNC)  
+[london discord](https://discord.gg/XThRMuybmz)  
+[bournemouth discord](https://discord.gg/yxtPcew7gV)  
+[oxford discord](https://discord.gg/sq5JRzYuyu)  
+

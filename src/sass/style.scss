@@ -381,15 +381,6 @@ blockquote {
     display: flex;
     justify-content: space-between;
     gap: 4px;
-    .box {
-      padding: 6px;
-      background: $button;
-      box-shadow: $boxxy;
-      &:hover {
-        box-shadow: none;
-        transform: translate(-4px, 4px) ;
-      }
-    }
     #ghub {
       height: 1.6em;
     }
@@ -401,7 +392,6 @@ blockquote {
       font-size: 14px;
       padding: 6px;
       background: $button;
-      box-shadow: $boxxy;
     }
   }
 }
@@ -433,6 +423,15 @@ blockquote {
   background-color: $buttoncurrent;
   &:hover {
     background: $buttoncurrent;
+  }
+}
+.box {
+  padding: 6px;
+  background: $button;
+  box-shadow: $boxxy;
+  &:hover {
+    box-shadow: none;
+    transform: translate(-4px, 4px) ;
   }
 }
 
