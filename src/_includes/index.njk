@@ -1,7 +1,23 @@
 {% extends "base.njk" %}
+{% block head %}
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+{% endblock %}
 {% block sidebar %}
 <ul>
   <li><a href="/index/updates/">updates</a></li>
   <li><a href="/index/catte/"> </a></li>
 </ul>
+{% endblock %}
+{% block script %}
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 {% endblock %}
