@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: spirrit/meleeuk
   branch: master
 publish_mode: editorial_workflow
 media_folder: "src/cms/uploads"
