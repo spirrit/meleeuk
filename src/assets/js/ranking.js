@@ -2,7 +2,7 @@ import * as twitter from "./twitter.js";
 const table = document.getElementById("ranktb");
 let btn = document.querySelectorAll(".btn");
 const buttons = Array.from(btn);
-const tableLoad = [false,false,false];
+const tableLoad = [false,false,false,false];
 const tables = new Array(3);
 let jsonURL;
 let active;
@@ -12,36 +12,45 @@ let imgxl;
 function tabler(id) { 
   switch (id.id) { 
     //determines which button was pressed, passes the right json, array and button data
-    case "uk22":
+    case "uk19":
       active = 0;
-      jsonURL = "/assets/json/pruk22.json";
-      img = "/assets/img/pruk22s.jpg";
-      imgxl = "/assets/img/pruk22.jpg";
-      break;    
+      jsonURL = "/assets/json/pruk19.json";
+      img = "/assets/img/pruk19ws.jpg";
+      imgxl = "/assets/img/pruk19w.jpg";
+      break;
     case "uk21":
       active = 1;
       jsonURL = "/assets/json/pruk21.json";
       img = "/assets/img/pruk21s.jpg";
       imgxl = "/assets/img/pruk21.jpg";
       break;
-    case "uk19":
+    case "uk22":
       active = 2;
-      jsonURL = "/assets/json/pruk19.json";
-      img = "/assets/img/pruk19ws.jpg";
-      imgxl = "/assets/img/pruk19w.jpg";
-      break;
-    case "scot22":
-      active = 0;
-      jsonURL = "/assets/json/prscot22.json";
-      img = "/assets/img/prscot22s.jpg";
-      imgxl = "/assets/img/prscot22.jpg";
-      break;
+      jsonURL = "/assets/json/pruk22.json";
+      img = "/assets/img/pruk22s.jpg";
+      imgxl = "/assets/img/pruk22.jpg";
+      break;    
+    case "uk23":
+      active = 3;
+      jsonURL = "/assets/json/pruk23.json";
+      img = "/assets/img/pruk23s.jpg";
+      imgxl = "/assets/img/pruk23.jpg";
+      break;    
+
+
     case "scot19":
-      active = 1;
+      active = 0;
       jsonURL = "/assets/json/prscot19.json";
       img = "/assets/img/prscot19s.jpg";
       imgxl = "/assets/img/prscot19.jpg";
       break;
+    case "scot22":
+      active = 1;
+      jsonURL = "/assets/json/prscot22.json";
+      img = "/assets/img/prscot22s.jpg";
+      imgxl = "/assets/img/prscot22.jpg";
+      break;
+
     default:
       console.log("nojson");
   }
@@ -65,6 +74,9 @@ function buttonHandler(active) {
       break;
     case 2:
       buttons[2].classList.add("current");
+      break;
+    case 3:
+      buttons[3].classList.add("current");
   };
 }
 function jsonHandler(arr, json) {
@@ -105,4 +117,4 @@ document.querySelectorAll(".btn").forEach(item => {
   let y = x++;
   item.addEventListener('click', function(){tabler(buttons[y])});
 });
-tabler(buttons[0]);
+tabler(buttons[buttons.length - 1]);

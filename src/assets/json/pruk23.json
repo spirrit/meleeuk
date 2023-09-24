@@ -1,0 +1,152 @@
+[
+  {
+    "rank": 1,
+    "name": "Frenzy",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "Falco"
+  },
+  {
+    "rank": 2,
+    "name": "Professor Pro",
+    "move_type": "<div class=\"prdown\"></div> 1",
+    "char": "Fox"
+  },
+  {
+    "rank": 3,
+    "name": "Max",
+    "move_type": "<div class=\"prline\"></div>",
+    "char": "Sheik"
+  },
+  {
+    "rank": 4,
+    "name": "Fat Tino",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "Falco"
+  },
+  {
+    "rank": 5,
+    "name": "Kingu",
+    "move_type": "<div class=\"prdown\"></div> 1",
+    "char": "Fox/Puff"
+  },
+  {
+    "rank": 6,
+    "name": "Luke",
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "Fox"
+  },
+  {
+    "rank": 7,
+    "name": "Bomboni",
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "C.Falcon"
+  },
+  {
+    "rank": 8,
+    "name": "Lil Chief",
+    "move_type": "<div class=\"prup\"></div> 8",
+    "char": "Marth"
+  },
+  {
+    "rank": 9,
+    "name": "Pi",
+    "move_type": "<div class=\"prup\"></div> 3",
+    "char": "Fox"
+  },
+  {
+    "rank": 10,
+    "name": "R23",
+    "move_type": "<div class=\"prdown\"></div> 3",
+    "char": "Sheik"
+  },
+  {
+    "rank": 11,
+    "name": "10QuidShoes",
+    "move_type": "<div class=\"prup\"></div> 3",
+    "char": "Marth"
+  },
+  {
+    "rank": 12,
+    "name": "Squeachu",
+    "move_type": "<div class=\"prdown\"></div> 1",
+    "char": "G&W"
+  },
+  {
+    "rank": 13,
+    "name": "Okameed",
+    "move_type": "<div class=\"prup\"></div> 3",
+    "char": "Pikachu"
+  },
+  {
+    "rank": 14,
+    "name": "Laurster",
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "Peach"
+  },
+  {
+    "rank": 15,
+    "name": "Bonjwa",
+    "move_type": "<div class=\"prup\"></div> 9",
+    "char": "Fox"
+  },
+  {
+    "rank": 16,
+    "name": "Skuxxy",
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "Puff"
+  },
+  {
+    "rank": 17,
+    "name": "Mordo",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "Falco"
+  },
+  {
+    "rank": 18,
+    "name": "Verdant",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Puff"
+  },
+  {
+    "rank": 19,
+    "name": "Ivy",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Sheik"
+  },
+  {
+    "rank": 20,
+    "name": "Stylo",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Puff"
+  },
+  {
+    "rank": 21,
+    "name": "Most Wanted",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "C.Falcon"
+  },
+  {
+    "rank": 22,
+    "name": "Jacob",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Samus"
+  },
+  {
+    "rank": 23,
+    "name": "Joefish",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Sheik"
+  },
+  {
+    "rank": 24,
+    "name": "HoorayForJay",
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "Falco"
+  },
+  {
+    "rank": 25,
+    "name": "EuO",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Peach"
+  }
+]

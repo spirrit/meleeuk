@@ -401,6 +401,7 @@ blockquote {
 }
 .rankingbtn {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   gap: 0.5em;
   margin: 8px;
