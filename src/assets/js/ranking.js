@@ -51,6 +51,19 @@ function tabler(id) {
       imgxl = "/assets/img/prscot22.jpg";
       break;
 
+    case "wales22":
+      active = 0;
+      jsonURL = "/assets/json/prwales22.json";
+      img = "/assets/img/prwales22s.jpg";
+      imgxl = "/assets/img/prwales22.jpg";
+      break;
+    case "wales23":
+      active = 1;
+      jsonURL = "/assets/json/prwales23.json";
+      img = "/assets/img/prwales23s.jpg";
+      imgxl = "/assets/img/prwales23.jpg";
+      break;
+
     default:
       console.log("nojson");
   }
@@ -102,13 +115,36 @@ function jsonBourne(active, json) {
 }
 function renderJson(players) {
   players.forEach(entry => {
-      let newRow = document.createElement("tr");
-      Object.values(entry).forEach((value) => {
-          let cell = document.createElement("td");
-          cell.innerHTML = value;
-          newRow.appendChild(cell);
-      })
+    let newRow = document.createElement("tr");
+    Object.values(entry).forEach((value) => {
+      let cell = document.createElement("td");
+      
+      if (value == entry.char) {
+        const charArray = value.split("/");
+        charArray.forEach((char) => {
+          let charImg = document.createElement("div");
+          charImg.classList.add("chars");
+          charSelect(char, charImg);
+          cell.appendChild(charImg);
+        });
+        cell.classList.add("ch");
+        
+        
+      }
+      else {
+        cell.innerHTML = value;
+      }
+      // console.log(charImg);
+      newRow.appendChild(cell);
+    })
+    if (typeof entry.rank === "string") {
+      table.appendChild(newRow).classList.add("hm");
+    }
+    else {
       table.appendChild(newRow);
+    }
+
+
   });
 };
 
@@ -118,3 +154,67 @@ document.querySelectorAll(".btn").forEach(item => {
   item.addEventListener('click', function(){tabler(buttons[y])});
 });
 tabler(buttons[buttons.length - 1]);
+
+
+function charSelect(charData, cell) {
+  switch (charData) {
+    case "Fox":
+      cell.style.backgroundPosition = "0 0";
+      break;
+    case "Marth":
+      cell.style.backgroundPosition = "-24px 0";
+      break;
+    case "Sheik":
+      cell.style.backgroundPosition = "48px 0";
+      break;
+    
+    case "Falco":
+      cell.style.backgroundPosition = "24px -24px";
+      break;
+    
+    case "C.Falcon":
+      cell.style.backgroundPosition = "24px 0";
+      break;
+    case "Puff":
+      cell.style.backgroundPosition = "48px -24px";
+      break;
+    case "Pikachu":
+      cell.style.backgroundPosition = "0 48px";
+      break;
+    case "Peach":
+      cell.style.backgroundPosition = "48px -48px";
+      break;
+    case "G&W":
+      cell.style.backgroundPosition = "-24px 24px";
+      break;
+    case "Samus":
+      cell.style.backgroundPosition = "48px 24px";
+      break;
+    case "ICs":
+      cell.style.backgroundPosition = "0 -24px";
+      break;
+    case "Dr.Mario":
+      cell.style.backgroundPosition = "0 24px";
+      break;
+    case "Luigi":
+      cell.style.backgroundPosition = "24px 48px";
+      break;
+    case "Ganondorf":
+      cell.style.backgroundPosition = "-24px -24px";
+      break;
+    case "Samus":
+      cell.style.backgroundPosition = "48px 24px";
+      break;
+    case "Zelda":
+      cell.style.backgroundPosition = "-24px 48px";
+      break;
+    case "DK":
+      cell.style.backgroundPosition = "-72px -72px";
+      break;
+    
+    default:
+      cell.style.backgroundPosition = "-72px -72px";
+      break;
+
+  }
+}

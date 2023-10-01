@@ -10,7 +10,7 @@ $buttoncurrent: #004357;
 $hfhover: #00455a48;
 $tableborders: #003849;
 $tablecell: #000b0f;
-$tablecell2: #004053;
+$tablecell2: #00090c;
 $shine: #00b0e6;
 $boxxy: -4px 4px #00090c8a;
 
@@ -242,14 +242,15 @@ blockquote {
 .tb {
   width: 295px;
   border-collapse: collapse;
-  .play {width: 46%;}
+  .play {width: 48%;}
   .rank {width: 9%;}
   .move {width: 15%;}
-  .char {width: 30%;}
+  .char {width: 28%;}
   border: 1px solid $tableborders;
   box-shadow: $boxxy;
   thead {
-    width:100%;
+    width: 100%;
+    height: 29px;
     border: none;
   }
   tr {
@@ -270,10 +271,36 @@ blockquote {
     border-bottom: none;
     border-color: $tableborders;
     font-size: 0.85em;
-    padding: 4px;
+    padding: 0;
+    padding-left: 4px;
   }
   th {
     border: none;
+  }
+  .ch {
+    height: 29px;
+    .chars {
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 24px;
+      background-image: url("/assets/img/chars.png");
+    }
+  }
+
+  .hm {
+    td {
+      background-color: #00141a;
+      &:nth-child(4n - 3) {
+        font-weight: 700;
+        background-color: $tablecell;
+        text-shadow: #000000 -1px 1px;      
+        border-left: none;
+      }
+    }
+    td:first-of-type {
+      font-size: 0.63em;
+    }
   }
 }
 .tbwrapper {
@@ -513,5 +540,11 @@ blockquote {
   }
   #f {
     display: none;
+  }
+  .tb {
+    thead {
+      height: 24px;
+    }
+
   }
 }

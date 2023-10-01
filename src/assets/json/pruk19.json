@@ -9,7 +9,7 @@
     "rank": 2,
     "name": "Setchi",
     "move_type": "<div class=\"prup\"></div> 1",
-    "char": "C. Falcon"
+    "char": "C.Falcon"
   },
   {
     "rank": 3,
@@ -21,7 +21,7 @@
     "rank": 4,
     "name": "Isdsar",
     "move_type": "<div class=\"prup\"></div> 3",
-    "char": "C. Falcon"
+    "char": "C.Falcon"
   },
   {
     "rank": 5,
@@ -75,7 +75,7 @@
     "rank": 13,
     "name": "Bomboni",
     "move_type": "<div class=\"prdown\"></div> 3",
-    "char": "C. Falcon"
+    "char": "C.Falcon"
   },
   {
     "rank": 14,
@@ -105,7 +105,7 @@
     "rank": 18,
     "name": "Rash Attack",
     "move_type": "<div class=\"prdown\"></div> 6",
-    "char": "Dr. Mario"
+    "char": "Dr.Mario"
   },
   {
     "rank": 19,

@@ -1,0 +1,80 @@
+[
+  {
+    "rank": 1,
+    "name": "Frenzy",
+    "move_type": "<div class=\"prline\"></div>",
+    "char": "Falco"
+  },
+  {
+    "rank": 2,
+    "name": "Luke",
+    "move_type": "<div class=\"prline\"></div>",
+    "char": "Fox"
+  },
+  {
+    "rank": 3,
+    "name": "Pi",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "Fox"
+  },
+  {
+    "rank": 4,
+    "name": "Skuxxyy",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Puff"
+  },
+  {
+    "rank": 5,
+    "name": "Lil Chief",
+    "move_type": "<div class=\"prdown\"></div> 2",
+    "char": "Marth/Falco/Fox"
+  },
+  {
+    "rank": 6,
+    "name": "Matt Smith",
+    "move_type": "<div class=\"prline\"></div>",
+    "char": "Falco"
+  },
+  {
+    "rank": 7,
+    "name": "Marzipann",
+    "move_type": "<div class=\"prup\"></div> 2",
+    "char": "Falco"
+  },
+  {
+    "rank": 8,
+    "name": "Lima Bean",
+    "move_type": "<div class=\"prline\"></div>",
+    "char": "Falco"
+  },
+  {
+    "rank": 9,
+    "name": "Pedlar",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "C.Falcon"
+  },
+  {
+    "rank": 10,
+    "name": "Coral",
+    "move_type": "<div class=\"prdown\"></div> 3",
+    "char": "Fox"
+  },
+  {
+    "rank": "<div class=\"hm\">HM</div>",
+    "name": "DevilishJho",
+    "move_type": "",
+    "char": "DK"
+  },
+  {
+    "rank": "<div class=\"hm\">HM</div>",
+    "name": "Soph",
+    "move_type": "",
+    "char": "Falco"
+  },
+  {
+    "rank": "<div class=\"hm\">HM</div>",
+    "name": "Blip",
+    "move_type": "",
+    "char": "Marth"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "name": "Frenzy",
+    "move_type": "",
+    "char": "Falco"
+  },
+  {
+    "rank": 2,
+    "name": "Luke",
+    "move_type": "",
+    "char": "Fox"
+  },
+  {
+    "rank": 3,
+    "name": "Lil Chief",
+    "move_type": "",
+    "char": "Marth/Sheik"
+  },
+  {
+    "rank": 4,
+    "name": "Pi",
+    "move_type": "",
+    "char": "Fox"
+  },
+  {
+    "rank": 5,
+    "name": "Aiken",
+    "move_type": "",
+    "char": "Marth"
+  },
+  {
+    "rank": 6,
+    "name": "Matt Smith",
+    "move_type": "",
+    "char": "Falco"
+  },
+  {
+    "rank": 7,
+    "name": "Coral",
+    "move_type": "",
+    "char": "Fox"
+  },
+  {
+    "rank": 8,
+    "name": "Lima Bean",
+    "move_type": "",
+    "char": "Falco"
+  },
+  {
+    "rank": 9,
+    "name": "Marzipann",
+    "move_type": "",
+    "char": "Falco"
+  },
+  {
+    "rank": 10,
+    "name": "Hylian reaper",
+    "move_type": "",
+    "char": "Samus"
+  }
+]
