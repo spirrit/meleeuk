@@ -50,6 +50,12 @@ function tabler(id) {
       img = "/assets/img/prscot22s.jpg";
       imgxl = "/assets/img/prscot22.jpg";
       break;
+    case "scot23":
+      active = 2;
+      jsonURL = "/assets/json/prscot23.json";
+      img = "/assets/img/prscot23s.jpg";
+      imgxl = "/assets/img/prscot23.jpg";
+      break;
 
     case "wales22":
       active = 0;
@@ -68,8 +74,16 @@ function tabler(id) {
       console.log("nojson");
   }
   let twt = id.id;
+  let fluff = document.getElementById("rankp2");
   document.getElementById("overlay").href=imgxl;
   document.getElementById("rankp").innerHTML = twitter[twt];
+
+  if (twitter[twt+"fluff"] != undefined) {
+    fluff.parentNode.style.display = "block";
+    fluff.innerHTML = twitter[twt+"fluff"];
+  } else {fluff.parentNode.style.display = "none";}
+
+  
   document.getElementById("rankimg").src=img;
   buttonHandler(active);
   jsonHandler(active, jsonURL);

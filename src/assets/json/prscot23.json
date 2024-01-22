@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "name": "Jacob",
+    "move_type": "<div class=\"prup\"></div> 3",
+    "char": "Samus"
+  },
+  {
+    "rank": 2,
+    "name": "stylo",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "Puff"
+  },
+  {
+    "rank": 3,
+    "name": "Ryzon",
+    "move_type": "<div class=\"prup\"></div> 4",
+    "char": "Fox"
+  },
+  {
+    "rank": 4,
+    "name": "TTS",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "C.Falcon"
+  },
+  {
+    "rank": 5,
+    "name": "Phade",
+    "move_type": "<div class=\"prup\"></div> 1",
+    "char": "Marth"
+  },
+  {
+    "rank": 6,
+    "name": "c:leo",
+    "move_type": "<div class=\"prup\"></div> 4",
+    "char": "Sheik"
+  },
+  {
+    "rank": 7,
+    "name": "Noto",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Sheik"
+  },
+  {
+    "rank": 8,
+    "name": "Boss Hog",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "C.Falcon"
+  },
+  {
+    "rank": 9,
+    "name": "Pilot",
+    "move_type": "<div class=\"prreturn\"></div>",
+    "char": "Peach/Fox"
+  },
+  {
+    "rank": 10,
+    "name": "NP8",
+    "move_type": "<div class=\"prstar\"></div>",
+    "char": "Falco/Fox"
+  }
+]

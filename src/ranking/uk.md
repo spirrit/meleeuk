@@ -1,6 +1,6 @@
 ---
 title: UK Melee rankings page
-layout: subranking.njk
+layout: subrankinguk.njk
 ---
 
 <p style="text-align: center;">UK hall of fame 🏆</p>

@@ -1,0 +1,30 @@
+{% extends "ranking.njk" %}
+{% block after %}
+<div class="tbwrapper">
+  <div class="imgsection">
+    <table class="imgwrapper tb" id="ranktb">
+    </table>
+  </div>
+  <div id="f" class="imgsection iss">
+    <div class="imgwrapper">
+      <strong><p class="titlep">PR art</p></strong>
+      <a id="overlay" href="#" target="_blank"><div class="overlay">
+        <div class="afterwrap"></div><img class="afterimg" src="/assets/img/opennew.svg">
+        <img id="rankimg">
+      </div></a>
+    </div>
+    <div class="imgwrapper">
+      <strong><p class="titlep">Tweet</p></strong>
+      <p id="rankp"></p>
+    </div>
+    <div class="imgwrapper" style="display:none;">
+      <strong><p class="titlep">Fluff</p></strong>
+      <p id="rankp2"></p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script type="module" src="/assets/js/ranking.js"></script>
+{% endblock %}

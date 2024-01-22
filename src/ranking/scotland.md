@@ -1,6 +1,6 @@
 ---
 title: Scotland rankings page
-layout: subranking.njk
+layout: subrankingsmall.njk
 ---
 
 <p style="text-align: center;">Scotland hall of fame 🏆</p>
@@ -8,5 +8,6 @@ layout: subranking.njk
 <div class="rankingbtn">
   <button class="btn" id="scot19">2019</button>
   <button class="btn" id="scot22">2022</button>
+  <button class="btn" id="scot23">2023</button>
 
 </div>

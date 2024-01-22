@@ -1,6 +1,6 @@
 ---
 title: Wales & SW rankings page
-layout: subranking.njk
+layout: subrankingsmall.njk
 ---
 
 <p style="text-align: center;">Wales & South West hall of fame 🏆</p>
