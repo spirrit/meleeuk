@@ -17,4 +17,5 @@ local:
 [london discord](https://discord.gg/XThRMuybmz)  
 [bournemouth discord](https://discord.gg/yxtPcew7gV)  
 [oxford discord](https://discord.gg/sq5JRzYuyu)  
+[leeds discord](https://leeds.melee.uk) 
 
