@@ -3,7 +3,7 @@ backend:
   repo: spirrit/meleeuk
   branch: master
   api_root: https://api.github.com
-  site_domain: cms.netlify.com
+  site_domain: location.hostname
   base_url: https://api.netlify.com
   auth_endpoint: auth
   cms_label_prefix: cms/
