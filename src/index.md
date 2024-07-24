@@ -1,7 +1,8 @@
 ---
-layout: index.njk
+layout: index2.njk
 title: melee.uk
 ---
+
 # ⚠️ This website is under construction! ⚠️
 
 If you're looking for tournaments, visit [melee.xyz](http://melee.xyz)\
