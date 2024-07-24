@@ -37,7 +37,7 @@ collections:
           label: "Layout",
           name: "layout",
           widget: "hidden",
-          default: "index.njk",
+          default: "index2.njk",
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
