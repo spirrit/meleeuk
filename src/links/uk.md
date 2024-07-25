@@ -1,6 +1,5 @@
 ---
 title: uk sites
-tags: links
 layout: links.njk
 ---
 
@@ -14,3 +13,4 @@ follow on twitter for updates on uk melee happenings!
 
 [facebook group](https://www.facebook.com/groups/MeleeUK/)  
 decaying facebook group, relic of a forgotten age
+
