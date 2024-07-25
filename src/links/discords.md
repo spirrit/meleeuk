@@ -1,5 +1,6 @@
 ---
 title: discord links
+tags: links
 layout: links.njk
 ---
 
@@ -7,7 +8,7 @@ layout: links.njk
 
 national:  
 [uk melee discord](https://discord.melee.uk)  
-[scotland melee discord](https://scotland.melee.uk)  
+[scotland melee discord](https://scotland.melee.uk)
 
 local:  
 [northern melee discord](https://discord.gg/ZYGDeQzZK9)  
@@ -17,5 +18,4 @@ local:
 [london discord](https://discord.gg/XThRMuybmz)  
 [bournemouth discord](https://discord.gg/yxtPcew7gV)  
 [oxford discord](https://discord.gg/sq5JRzYuyu)  
-[leeds discord](https://leeds.melee.uk) 
-
+[leeds discord](https://leeds.melee.uk)
