@@ -41,18 +41,3 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "link"
-    label: "Links pages"
-    folder: "src/links",
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {
-          label: "Layout",
-          name: "layout",
-          widget: "hidden",
-          default: "links.njk",
-        }
-      - { label: "Tags", name: "tags", default: "links", widget: "hidden" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
