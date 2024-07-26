@@ -1,0 +1,85 @@
+$text: #fff;
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body {
+  margin: 0;
+  height: 100%;
+}
+html {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: $text;
+  font-size: 18px;
+}
+body {
+  background-color: #000;
+  background-image: linear-gradient(45deg, #004e818e 1px,transparent 0);
+  background-size: 0.5rem 0.5rem;
+  overflow-y: scroll;
+}
+a, a:hover, a:visited {
+  color: $text;
+  text-decoration: none;
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  p {
+    //font-size: 20px;
+    margin: 8px;
+  }
+  main {
+    min-width: 500px;
+    background-color: #00141a8f;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .bubble {
+      width: 55%;
+      min-width: 248px;
+      font-size: 10;
+      box-shadow: 2px 4px 8px #0000001e;
+      margin: 20px;
+      display: flex;
+      padding: 7px;
+      background: #00212ba6;
+      border-radius: 18px;
+      border: 0;
+      transition-duration: 0.2s;
+      &:hover {
+        background-color: #003442a6;
+        transform: scale(1.08);
+      }
+      a {
+        //text-shadow: 1px 1px #00151b6b;
+        border: 0;
+        margin: 8px;
+        border: none;
+        flex-grow: 2;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+      }
+      img {
+        margin: 7px;
+      }
+      p {
+        text-align: center;
+        flex-grow: 2;
+      }
+    }
+  }
+}
+.fuck {
+  font-size: 22px;
+  text-wrap: nowrap;
+}

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
+    <link rel="stylesheet" href="{{ '/css/landing.css' | url }}"/>
     <script>
       /*to prevent Firefox FOUC, this must be here*/
       let FF_FOUC_FIX;
@@ -18,9 +18,9 @@
     {% endblock %}
   </head>
   <body>
-    {% block header %}
+    {# {% block header %}
     <header id="nav">
-      <a href="/home/" id="navhome"><img
+      <a href="/" id="navhome"><img
         class="rainbowtit"
         src="/assets/img/title.svg"
         style="align-self: baseline; z-index: 1; pointer-events: none"
@@ -32,28 +32,15 @@
       </nav>
       <div class="hamb" id="burger"><span class="hamb-line"></span></div>
     </header>
-    {% endblock %}
-    <div class="page-wrapper">
-      <aside class="sidebar">
-        <div id="sidebar-burger"><span class="line"></span></div>
-        {% block sidebar %}
-        {% endblock %}
-      </aside>
+    {% endblock %} #}
+    <div class="landing">
       <main>
         {{ content | safe }}
         {% block after %}
         {% endblock %}
       </main>
     </div>
-    <footer class="page-footer">
-      <div class="footer">
-        <a class="box" href="https://github.com/spirrit/meleeuk"><img src="/assets/img/github.svg" id="ghub"><p>GitHub</p></a>
-        <div class="box contact">
-          <p>Contact me at:</p>
-          <p>moon@melee.uk</p>
-        </div>
-      </div>
-    </footer>
+
     <script src="/assets/js/base.js"></script>
     {% block script %}
     {% endblock %}
