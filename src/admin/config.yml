@@ -3,7 +3,8 @@ backend:
   repo: spirrit/meleeuk
   branch: master
   api_root: https://api.github.com
-  site_domain: melee.uk
+  site_domain: api.netlify.com
+  # site_domain: melee.uk
   base_url: https://api.netlify.com
   auth_endpoint: auth
   cms_label_prefix: cms/
@@ -39,5 +40,20 @@ collections:
           widget: "hidden",
           default: "index2.njk",
         }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "links"
+    label: "Links pages"
+    folder: "src/links"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Layout",
+          name: "layout",
+          widget: "hidden",
+          default: "links.njk",
+        }
+      - { label: "Tags", name: "tags", default: "links", widget: "hidden" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
