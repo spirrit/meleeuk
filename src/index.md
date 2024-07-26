@@ -1,18 +1,12 @@
 ---
-layout: landing.njk
+layout: index2.njk
 title: melee.uk
 ---
 
-<img src="/assets/img/title.svg" width="300px"></img>
+# ⚠️ This website is under construction! ⚠️
 
-<p class="fuck">Join the online community in our new discord!</p>
-<a href="https://discord.com" class="bubble">
-    <img src="/assets/img/discord.svg" width="30px"></img>
-    <p>UK Melee discord</p>
-</a>
+If you're looking for tournaments, visit [melee.xyz](http://melee.xyz)\
+If you want to find your local discord, go to the [discord links page](/links/discords/)
 
-<p class="fuck">or...</p>
-
-<a href="home" class="bubble">
-  <p>Continue to the main site...</p>
-</a>
+* [](https://www.youtube.com/@teamphoenix5863)[Team Phoenix Youtube Channel](https://www.youtube.com/@teamphoenix5863)
+* [Team Phoenix Twitch Channel](https://twitch.tv/phoenixsmash/home)
