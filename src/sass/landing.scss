@@ -23,30 +23,32 @@ a, a:hover, a:visited {
   color: $text;
   text-decoration: none;
 }
-
+.title {
+  max-width: 70%;
+}
 .landing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
-  p {
-    //font-size: 20px;
-    margin: 8px;
-  }
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+
   main {
-    min-width: 500px;
     background-color: #00141a8f;
-    padding: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
+    margin: 5px;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    p {
+      text-align: center;
+      margin: 8px;
+    }
     .bubble {
       width: 55%;
       min-width: 248px;
-      font-size: 10;
+      font-size: 1em;
       box-shadow: 2px 4px 8px #0000001e;
       margin: 20px;
       display: flex;
@@ -73,6 +75,7 @@ a, a:hover, a:visited {
         margin: 7px;
       }
       p {
+        text-wrap:nowrap;
         text-align: center;
         flex-grow: 2;
       }
@@ -81,5 +84,4 @@ a, a:hover, a:visited {
 }
 .fuck {
   font-size: 22px;
-  text-wrap: nowrap;
 }

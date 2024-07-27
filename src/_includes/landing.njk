@@ -18,29 +18,22 @@
     {% endblock %}
   </head>
   <body>
-    {# {% block header %}
-    <header id="nav">
-      <a href="/" id="navhome"><img
-        class="rainbowtit"
-        src="/assets/img/title.svg"
-        style="align-self: baseline; z-index: 1; pointer-events: none"
-        alt="title image that says melee uk"/></a>
-      <nav id="wrapper" class="link__wrapper">
-          <a href="/ranking/uk/" class="navlink">ranking</a>
-          <a href="/slippi/" class="navlink">slippi</a>
-          <a href="/links/uk/" class="navlink navlast">links</a>
-      </nav>
-      <div class="hamb" id="burger"><span class="hamb-line"></span></div>
-    </header>
-    {% endblock %} #}
     <div class="landing">
       <main>
+        <img src="/assets/img/title.svg" class="title"></img>
         {{ content | safe }}
+        <a href="https://discord.com" class="bubble">
+          <img src="/assets/img/discord.svg" width="30px"></img>
+          <p>UK Melee discord</p>
+        </a>
+        <p class="fuck">or...</p>
+        <a href="/" class="bubble">
+          <p>Continue to the main site...</p>
+        </a>
         {% block after %}
         {% endblock %}
       </main>
     </div>
-
     <script src="/assets/js/base.js"></script>
     {% block script %}
     {% endblock %}
