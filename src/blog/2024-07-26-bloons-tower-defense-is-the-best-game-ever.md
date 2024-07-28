@@ -2,7 +2,7 @@
 layout: blog.njk
 title: BLOONS TOWER DEFENSE IS THE BEST GAME EVER
 date: 2024-07-26T19:54:00.000Z
-thumbnail: src/cms/uploads/bloons_td_ios_logo.jpg
+thumbnail: cms/uploads/bloons_td_ios_logo.jpg
 ---
 I love this game. I love shooting the ballons.
 
