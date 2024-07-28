@@ -199,15 +199,18 @@ blockquote {
   gap: 1em;
   //grid-template-areas: "sidebar main";
   //grid-template-columns: minmax(10px,0.4fr) minmax(0,4fr);
-  grid-template-areas: "sidebar main";
+  grid-template-areas: "sidebar main"
+  "sidebar main"
+  "sidebar after";
   grid-template-columns: minmax(175px,0.5fr) minmax(0,4fr);
   main {
+    grid-area: main;
     display: flex;
     flex-direction: column;
     a {
       &:hover {
         color: #1dddff;
-        animation: hue 2s infinite linear;
+        //animation: hue 2s infinite linear;
       }
     }
     h1 {
@@ -219,6 +222,7 @@ blockquote {
   }
 }
 .sidebar {
+  grid-area: sidebar;
   border-right: 1px solid $headfoot;
   .sideimg {
     width: 20px;
@@ -465,27 +469,46 @@ blockquote {
     transform: translate(-4px, 4px) ;
   }
 }
+.snippetbox {
+  display: flex;
+  min-width: 40%;
+  height: 200px;
+}
 .snippet {
-  width: 45%;
+  max-width: 360px;
   display: flex;
   flex-direction: column;
-  h2 {
+  background-size: cover;
+  transition-duration: 0.08s;
+  box-shadow: 2px 4px 8px #0000001e;
+  overflow: hidden;
+  
+  &:hover {
+    transform: scale(1.03);
+    transform-origin: bottom;
+    border: 2px solid #00d9ff;
+  }
+  h2 {color: #00d9ff;
     font-size: 1.3em;
     margin: 0;
     padding: 8px;
-    background: grey;
-    
+    background: #00303fd2;
   }
   p {
     padding: 8px;
+    margin: 0;
   }
-  border:  1px solid #fff;
 }
 .recent {
   display: flex;
   gap: 1em;
 }
+.recentpost {
+  height: 100%;
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.466));
+}
 .after {
+  grid-area: after;
   margin-top: auto;
   margin-bottom: 1em;
 }
