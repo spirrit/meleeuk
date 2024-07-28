@@ -471,11 +471,10 @@ blockquote {
 }
 .snippetbox {
   display: flex;
-  min-width: 40%;
   height: 200px;
 }
 .snippet {
-  max-width: 360px;
+  max-width: 370px;
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -485,19 +484,34 @@ blockquote {
   
   &:hover {
     transform: scale(1.03);
-    transform-origin: bottom;
+    //transform-origin: bottom;
     border: 2px solid #00d9ff;
   }
   h2 {color: #00d9ff;
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
     padding: 8px;
     background: #00303fd2;
   }
   p {
+    font-size: 0.9em;
     padding: 8px;
     margin: 0;
   }
+}
+.snippetboxend {
+  width: 20%;
+  //flex-grow: 1;
+}
+.snippetend {
+  width: 100%;
+  justify-content: center;
+  background: $boxxy url("/assets/img/polar1.png");
+  background-position: bottom 8px right 20px;
+  background-repeat: no-repeat;
+  background-size: 17%;
+  text-align: center;
+  font-size: 1.3em;
 }
 .recent {
   display: flex;
@@ -521,7 +535,7 @@ blockquote {
     background-size: 0.6rem 0.6rem;
   }
   .page-wrapper {
-    grid-template-areas: "sidebar main";
+    //grid-template-areas: "sidebar main";
     grid-template-columns: 2.5% 95% 2.5%;
     grid-template-rows: 35px auto;
     gap: 0;

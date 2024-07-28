@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
+    <style>.page-wrapper{padding-right:1em;grid-template-columns:none;}
+    </style>
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    {% block header %}
+    <header id="nav">
+      <a href="/" id="navhome"><img
+        class="rainbowtit"
+        src="/assets/img/title.svg"
+        style="align-self: baseline; z-index: 1; pointer-events: none"
+        alt="title image that says melee uk"/></a>
+      <nav id="wrapper" class="link__wrapper">
+          <a href="/ranking/uk/" class="navlink">ranking</a>
+          <a href="/slippi/" class="navlink">slippi</a>
+          <a href="/events/" class="navlink">events</a>
+          <a href="/links/uk/" class="navlink navlast">links</a>
+      </nav>
+      <div class="hamb" id="burger"><span class="hamb-line"></span></div>
+    </header>
+    {% endblock %}
+    <div class="page-wrapper">
+      <main>
+        {{ content | safe }}
+      </main>
+      {% block after %}
+      {% endblock %}
+    </div>
+    <footer class="page-footer">
+      <div class="footer">
+        <a class="box" href="https://github.com/spirrit/meleeuk"><img src="/assets/img/github.svg" id="ghub"><p>GitHub</p></a>
+        <div class="box contact">
+          <p>Contact me at:</p>
+          <p>moon@melee.uk</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/base.js"></script>
+    {% block script %}
+    {% endblock %}
+  </body>
+</html>
