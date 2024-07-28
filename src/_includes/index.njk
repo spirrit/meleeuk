@@ -3,12 +3,29 @@
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 {% endblock %}
 {% block sidebar %}
-<ul>
-  <li><a href="/index/updates/">updates</a></li>
-  <li><a href="/index/catte/"> </a></li>
-</ul>
 {% endblock %}
-{% block script %}
+{% block after %}
+<div class="after">
+  <h1>Recent posts:</h1>
+  <div class="recent">
+    {% set atPost = 0 %}
+    {% for blog in collections.blog %}
+      {% if atPost < 2 %}
+        <a href="{{blog.url}}" class="snippet">
+          <div>
+            <h2>{{blog.data.title | truncate(25) }}</h2>
+            {{blog.data.content | safe | truncate(150) }}
+          </div>
+        </a>
+      {% endif%}
+      {% set atPost = atPost + 1 %}
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
+
+
+{# {% block script %}
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
@@ -20,4 +37,4 @@
     });
   }
 </script>
-{% endblock %}
+{% endblock %} #}

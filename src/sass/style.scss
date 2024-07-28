@@ -201,7 +201,9 @@ blockquote {
   //grid-template-columns: minmax(10px,0.4fr) minmax(0,4fr);
   grid-template-areas: "sidebar main";
   grid-template-columns: minmax(175px,0.5fr) minmax(0,4fr);
-  main{
+  main {
+    display: flex;
+    flex-direction: column;
     a {
       &:hover {
         color: #1dddff;
@@ -462,6 +464,30 @@ blockquote {
     box-shadow: none;
     transform: translate(-4px, 4px) ;
   }
+}
+.snippet {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 8px;
+    background: grey;
+    
+  }
+  p {
+    padding: 8px;
+  }
+  border:  1px solid #fff;
+}
+.recent {
+  display: flex;
+  gap: 1em;
+}
+.after {
+  margin-top: auto;
+  margin-bottom: 1em;
 }
 
 @media (max-width: 750px) {
