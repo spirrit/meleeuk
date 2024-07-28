@@ -10,7 +10,7 @@ backend:
   cms_label_prefix: cms/
 publish_mode: editorial_workflow
 media_folder: "src/cms/uploads"
-public_folder: "src/cms/uploads"
+public_folder: "cms/uploads"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
