@@ -66,8 +66,8 @@ collections:
         name: navigation
         fields:
           - label: Navigation
-            name: nav-items
+            name: navitems
             widget: list
             fields:
-              - {label: Label, name: label, widget: string}
-              - {label: Path, name: path, widget: string}
+              - { label: Label, name: label, widget: string }
+              - { label: Path, name: path, widget: string }
