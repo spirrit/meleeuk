@@ -65,7 +65,7 @@ collections:
         file: "src/_data/navigation.json"
         name: "navigation"
         fields:
-          - label: Nav
+          - label: "Nav link"
             name: navitems
             widget: list
             fields: 
