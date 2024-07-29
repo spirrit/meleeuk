@@ -9,6 +9,3 @@ navitems:
     path: /events/
   - label: Links
     path: /links/uk/
-nav-items:
-  - label: Map
-    path: map
