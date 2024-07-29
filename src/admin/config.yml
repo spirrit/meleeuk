@@ -58,3 +58,16 @@ collections:
       - { label: "Tags", name: "tags", default: "links", widget: "hidden" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Navigation"
+        file: "src/_data/navigation.json"
+        name: "navigation"
+        fields:
+          - label: "Nav link"
+            name: navitems
+            widget: list
+            fields: 
+              - { label: Label, name: label, widget: string }
+              - { label: Path, name: path, widget: string }

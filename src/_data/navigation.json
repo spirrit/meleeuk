@@ -1,0 +1,20 @@
+{
+  "navitems": [
+    {
+      "label": "Ranking",
+      "path": "/ranking/uk/"
+    },
+    {
+      "label": "Slippi",
+      "path": "/slippi/"
+    },
+    {
+      "label": "Events",
+      "path": "/events/"
+    },
+    {
+      "label": "Links",
+      "path": "/links/uk/"
+    }
+  ]
+}
