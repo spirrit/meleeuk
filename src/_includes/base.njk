@@ -26,10 +26,9 @@
         style="align-self: baseline; z-index: 1; pointer-events: none"
         alt="title image that says melee uk"/></a>
       <nav id="wrapper" class="link__wrapper">
-          <a href="/ranking/uk/" class="navlink">ranking</a>
-          <a href="/slippi/" class="navlink">slippi</a>
-          <a href="/events/" class="navlink">events</a>
-          <a href="/links/uk/" class="navlink navlast">links</a>
+        {% for item in navigation.navitems %}
+          <a href="{{item.path}}" class="navlink">{{item.label | lower}}</a>
+        {% endfor %}
       </nav>
       <div class="hamb" id="burger"><span class="hamb-line"></span></div>
     </header>

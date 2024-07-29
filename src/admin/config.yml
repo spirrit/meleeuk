@@ -58,16 +58,16 @@ collections:
       - { label: "Tags", name: "tags", default: "links", widget: "hidden" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: settings
-    label: Settings
+  - name: "settings"
+    label: "Settings"
     files:
-      - file: data/navigation.yml
-        label: Navigation
-        name: navigation
+      - label: "Navigation"
+        file: "src/_data/navigation.json"
+        name: "navigation"
         fields:
-          - label: Navigation
+          - label: Nav
             name: navitems
             widget: list
-            fields:
+            fields: 
               - { label: Label, name: label, widget: string }
               - { label: Path, name: path, widget: string }
