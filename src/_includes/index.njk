@@ -1,12 +1,23 @@
 {% extends "basewide.njk" %}
-{% block head %}
+{# {% block head %}
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-{% endblock %}
-{% block sidebar %}
+{% endblock %} #}
+{% block main %}
+<div class="indexbox">
+  <p>
+    The team is still hard at work putting the finishing touches on the site so bare with us, but feel free to check out some of our features such as the new <a href="/events/">Events</a> page and our esteemed <a href="/ranking/uk/">Hall of Fame!</a>
+  </p>
+</div>
+{# {% set firstPost = collections.blog | first %}
+
+<h2>{{firstPost.data.title}}</h2>
+{{ firstPost.templateContent | safe }} #}
+
+  {{ content | safe }}
 {% endblock %}
 {% block after %}
 <section class="after">
-  <h1>Recent posts:</h1>
+  {# <h2>Recent posts:</h2> #}
   <div class="recent">
     {% set atPost = 0 %}
     {% for blog in collections.blog %}

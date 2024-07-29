@@ -528,6 +528,13 @@ blockquote {
   margin-top: auto;
   margin-bottom: 1em;
 }
+.indexbox {
+  padding: 0 15px;
+  margin-top: 1em;
+  border: 2px dashed orange;
+  background: rgba(255, 166, 0, 0.1);
+
+}
 
 @media (max-width: 750px) {
   html {
