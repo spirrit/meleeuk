@@ -193,7 +193,8 @@ blockquote {
   background: #00141a;
   min-height: calc(100vh - 185px);
   //max-height: ;
-  max-width: 1000px;
+  ///max-width: 1000px;
+  max-width: 890px;
   margin: auto;
   display: grid;
   gap: 1em;
@@ -474,6 +475,7 @@ blockquote {
   height: 200px;
 }
 .snippet {
+  border-radius: 6px;
   max-width: 370px;
   display: flex;
   flex-direction: column;
