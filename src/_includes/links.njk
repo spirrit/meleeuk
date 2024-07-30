@@ -1,6 +1,6 @@
 {% extends "base.njk" %}
 {% block sidebar %}
-<ul>
+<ul class="sidelist">
   {% for links in collections.links %}
     <li><a href="{{links.url}}">{{links.data.title}}</a></li>
   {% endfor %}
