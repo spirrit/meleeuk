@@ -1,7 +1,7 @@
 $borders: #444;
 $text: #fff;
 $bg: #333;
-$linkcolour: #aaa;
+$linkcolour: #00E6A9;
 $headfoot: #00303fe8;
 $headfoot2: #00303f59;
 $button: #002431;
@@ -13,6 +13,7 @@ $tablecell: #000b0f;
 $tablecell2: #00090c;
 $shine: #00b0e6;
 $boxxy: -4px 4px #00090c8a;
+$mainbg: #00141a;
 
 @font-face {
   font-family: IBM_VGA;
@@ -79,9 +80,9 @@ html {
   font-size: 18px;
 }
 body {
-  background: none;
-  background-image: linear-gradient(45deg, #004e818e 1px,transparent 0);
-  background-size: 0.5rem 0.5rem;
+  background: $mainbg;
+  //background-image: linear-gradient(45deg, #004e818e 1px,transparent 0);
+  //background-size: 0.5rem 0.5rem;
   overflow-y: scroll;
 }
 a {
@@ -190,8 +191,8 @@ blockquote {
   }
 }
 .page-wrapper {
-  background: #00141a;
-  min-height: calc(100vh - 185px);
+  background: $mainbg;
+  min-height: calc(100vh - 156px);
   //max-height: ;
   ///max-width: 1000px;
   max-width: 890px;
@@ -210,7 +211,7 @@ blockquote {
     flex-direction: column;
     a {
       &:hover {
-        color: #1dddff;
+        color: #00e6e6;
         //animation: hue 2s infinite linear;
       }
     }
@@ -401,7 +402,7 @@ blockquote {
 }
 .page-footer {
   display: flex;
-  height: 110px;
+  height: 4.5em;
   background: $headfoot;
   flex-shrink: 0;
   //box-shadow: 0 50vh 0 50vh $headfoot;
@@ -410,12 +411,11 @@ blockquote {
     margin: 0;
   }
   .footer {
-    margin: auto;
     width: 100%;
-    padding: 1em;
+    padding: 0.8em;
     display: flex;
     justify-content: space-between;
-    gap: 4px;
+    //gap: 4px;
     #ghub {
       height: 1.6em;
     }
@@ -462,9 +462,11 @@ blockquote {
   }
 }
 .box {
+  margin: auto 0;
   padding: 6px;
   background: $button;
   box-shadow: $boxxy;
+  color: #fff;
   &:hover {
     box-shadow: none;
     transform: translate(-4px, 4px) ;
@@ -483,19 +485,22 @@ blockquote {
   transition-duration: 0.08s;
   box-shadow: 2px 4px 8px #0000001e;
   overflow: hidden;
-  
   &:hover {
     transform: scale(1.03);
     //transform-origin: bottom;
-    border: 2px solid #00d9ff;
+    border: 2px solid $linkcolour;
   }
-  h2 {color: #00d9ff;
+  h2 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
     font-size: 1.2em;
     margin: 0;
     padding: 8px;
     background: #00303fd2;
   }
   p {
+    color: white;
+    text-shadow: 1px 1px 1px #000;
     font-size: 0.9em;
     padding: 8px;
     margin: 0;
@@ -506,6 +511,7 @@ blockquote {
   //flex-grow: 1;
 }
 .snippetend {
+  
   width: 100%;
   justify-content: center;
   background: $boxxy url("/assets/img/polar1.png");
@@ -520,6 +526,7 @@ blockquote {
   gap: 1em;
 }
 .recentpost {
+  
   height: 100%;
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.466));
 }
@@ -531,9 +538,8 @@ blockquote {
 .indexbox {
   padding: 0 15px;
   margin-top: 1em;
-  border: 2px dashed orange;
-  background: rgba(255, 166, 0, 0.1);
-
+  border: 2px dashed $linkcolour;
+  background: #073327;
 }
 
 @media (max-width: 750px) {
