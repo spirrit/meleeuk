@@ -1,0 +1,42 @@
+{% extends "base.njk" %}
+{% block head %}
+<title>Events</title>
+<style>
+aside {
+  display: none;
+}
+main {
+  grid-column: 1 / -1;
+  padding: 30px;
+}
+thead td {
+  font-weight: bold;
+}
+td {
+  padding: 10px;
+}
+thead tr, tr:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+</style>
+{% endblock %}
+
+{% block after %}
+<h2>Weeklies/fortnightlies/monthlies</h2>
+<table>
+  <thead>
+    <tr>
+      <td>Tournament</td>
+      <td>Location</td>
+      <td>Frequency</td>
+    </tr>
+  </thead>
+  {% for weekly in weeklies %}
+    <tr>
+        <td><a href="/events/weeklies/{{ weekly.name | slugify }}/">{{weekly.name}}</a></td>
+        <td>{{weekly.location}}</td>
+        <td>{{weekly.frequency}}</td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}
