@@ -11,6 +11,10 @@
     {
       "label": "Links",
       "path": "/links/uk/"
+    },
+    {
+      "label": "Events",
+      "path": "/events/"
     }
   ]
 }

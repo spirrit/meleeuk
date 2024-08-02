@@ -1,0 +1,9 @@
+{% extends "base.njk" %}
+
+{% block sidebar %}
+<ul>
+  {% for weekly in weeklies %}
+    <li><a href="/events/weeklies/{{ weekly.name | slugify }}/">{{weekly.name}} - {{weekly.location}}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
