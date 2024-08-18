@@ -1,1 +1,14 @@
 {% extends "base.njk" %}
+{% block main %}
+{% for blog in collections.blog %}
+    <div>
+        <h1><a href="{{blog.url}}">{{blog.data.title}}</a></h1>
+        <p style="font-style: italic;">By {{blog.data.author}}</p>
+        {# <p>{{blog.data.content | safe | truncate(150) }}</p> #}
+        <p>{{ blog.data.date | postDate }}</p>
+    </div>
+{% endfor %}
+
+
+
+{% endblock %}

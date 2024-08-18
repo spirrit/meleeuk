@@ -41,6 +41,8 @@
       </aside>
       <main>
         {{ content | safe }}
+        {% block main %}
+        {% endblock %}
       </main>
       {% block after %}
       {% endblock %}

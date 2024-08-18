@@ -1,0 +1,9 @@
+{% extends "basewide.njk" %}
+{% block main %}
+<h1 id="blogtitle">{{title}}</h1>
+<p style="font-style:italic;">Written by: {{author}}</p>
+{# <p style="margin-top:0;">{{date | postDate}}</p> #}
+<img src="/{{thumbnail}}"><img>
+{{ content | safe }}
+
+{% endblock %}

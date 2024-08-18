@@ -1,6 +1,7 @@
 ---
-layout: blog.njk
+layout: blogpost.njk
 title: BLOONS TOWER DEFENSE IS THE BEST GAME EVER
+author: Mel Thornton
 date: 2024-07-26T19:54:00.000Z
 tags: blog
 thumbnail: cms/uploads/bloons_td_ios_logo.jpg

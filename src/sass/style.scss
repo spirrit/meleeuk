@@ -545,6 +545,10 @@ blockquote {
   position: sticky;
   top: 75px;
 }
+#blogtitle {
+  font-size: 2.3em;
+  margin-bottom: 0;
+}
 
 @media (max-width: 750px) {
   html {

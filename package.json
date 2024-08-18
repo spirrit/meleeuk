@@ -4,13 +4,13 @@
   "description": "uk melee hub",
   "main": "index.html",
   "scripts": {
+    "11": "npx @11ty/eleventy",
     "watch:sass": "sass --watch src/sass:dist/css",
     "build:sass": "sass src/sass:dist/css",
     "watch:eleventy": "npx @11ty/eleventy --serve",
     "build:eleventy": "npx @11ty/eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:eleventy build:sass",
-    "11": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1",
     "11ty": "npx @11ty/eleventy --serve"
   },
@@ -31,6 +31,7 @@
     "@11ty/eleventy": "^1.0.2"
   },
   "dependencies": {
+    "luxon": "^3.5.0",
     "npm-run-all": "^4.1.5",
     "sass": "^1.57.0"
   }

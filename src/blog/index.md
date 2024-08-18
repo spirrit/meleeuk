@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: blog.njk
 title: hello this is the blog page
 ---
 the blog page placeholder
