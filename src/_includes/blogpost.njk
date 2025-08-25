@@ -1,9 +1,11 @@
 {% extends "basewide.njk" %}
 {% block main %}
-<h1 id="blogtitle">{{title}}</h1>
-<p style="font-style:italic;">Written by: {{author}}</p>
-{# <p style="margin-top:0;">{{date | postDate}}</p> #}
-<img src="/{{thumbnail}}"><img>
+<div id="blogbanner" style="background-image: linear-gradient( rgba(2, 25, 32, 0.97), rgba(0, 20, 26, 0) ), url(/{{thumbnail}})">
+  <h1 id="blogtitle">{{title}}</h1>
+  <p style="font-style:italic;">{{author}}</p>
+  {# <p style="margin-top:0;">{{date | postDate}}</p> #}
+  {# <img src="/{{thumbnail}}"><img> #}
+</div>
 {{ content | safe }}
 
 {% endblock %}
