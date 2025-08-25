@@ -17,7 +17,16 @@
 {% endblock %}
 {% block after %}
 <section class="after">
-  {# <h2>Recent posts:</h2> #}
+  {% set first = collections.blog | first %}
+  <div class="snippet2">
+    <div class="titlewrapper">
+      <div class="titlebg" style="background-image: url({{first.data.thumbnail}});"></div>
+      <h1>{{first.data.title}}</h1>
+      <h4>{{first.data.author}} - {{ first.data.date | postDate }}</h4>
+    </div>
+    <p>{{first.data.content | safe | truncate(650) }}</p>
+  </div>
+
   <div class="recent">
     {% set atPost = 0 %}
     {% for blog in collections.blog %}
@@ -25,7 +34,7 @@
         <div class="snippetbox">
           <a href="{{blog.url}}" class="snippet" style="background-image: url({{blog.data.thumbnail}});">
             <div class="recentpost">
-              <h2>{{blog.data.title | truncate(25) }}</h2>
+              <h2>{{blog.data.title}}</h2>
               {{blog.data.content | safe | truncate(150) }}
             </div>
           </a>
@@ -38,6 +47,7 @@
         <p>{{collections.blog.length-2}} more posts in our archive...</p>
       </a>
     </div>
+    
   </div>
 </section>
 {% endblock %}

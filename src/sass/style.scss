@@ -476,10 +476,11 @@ blockquote {
 .snippetbox {
   display: flex;
   height: 200px;
+  min-width: 100px;
 }
 .snippet {
   border-radius: 6px;
-  max-width: 370px;
+  
   display: flex;
   flex-direction: column;
   background-size: cover;
@@ -491,13 +492,16 @@ blockquote {
     //transform-origin: bottom;
     border: 2px solid $linkcolour;
   }
-  h2 {
+  h2, h1 {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-    font-size: 1.2em;
+    font-size: 1.8em;
     margin: 0;
     padding: 8px;
     background: #00303fd2;
+  }
+  h2 {
+    font-size: 1.2em;
   }
   p {
     color: white;
@@ -507,8 +511,78 @@ blockquote {
     margin: 0;
   }
 }
+.snippet2 {
+  //border-radius: 6px;
+  //max-width: 370px;
+  
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  //transition-duration: 0.08s;
+  //box-shadow: 2px 4px 8px #0000001e;
+  overflow: hidden;
+  //background-image: linear-gradient(red, blue);
+  
+  //mask-mode: alpha;
+
+  &:hover {
+    //transform: scale(1.03);
+    //transform-origin: bottom;
+    border: 2px solid $linkcolour;
+    margin: -2px;
+  }
+  h1, h4 {
+    
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1.8em;
+    margin: 0;
+    padding: 8px;
+    background: linear-gradient(to right, rgb(0, 48, 63), rgba(0, 48, 63, 0.1));
+    isolation: isolate;
+    
+  }
+  h4 {
+    background: linear-gradient(to right, rgb(0, 30, 39), rgba(0, 30, 39, 0.1));
+    font-size: 0.8em;
+    font-weight: 100;
+    font-style: italic;
+  }
+  p {
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 0.9em;
+    padding: 8px;
+    margin: 0;
+  }
+}
+// .wrapper2 {
+//   position: relative;
+// }
+.titlewrapper {
+  //width: 700px;
+  position: relative;
+  // top: 0;
+  // left: 0;
+  //mask-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  
+  
+  // //mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  // mask-composite: add;
+}
+
+.titlebg {
+  mask-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  // top: 0;
+  // left: 0;
+  //z-index: 1;
+  
+}
 .snippetboxend {
-  width: 20%;
+  width: 45%;
   //flex-grow: 1;
 }
 .snippetend {
@@ -524,11 +598,19 @@ blockquote {
 }
 .recent {
   display: flex;
+  margin-top: 1em;
   gap: 1em;
 }
 .recentpost {
   height: 100%;
+  //width: 100%;
+
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.466));
+  h2 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 .after {
   grid-area: after;
