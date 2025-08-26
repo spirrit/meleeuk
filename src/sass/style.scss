@@ -531,19 +531,21 @@ blockquote {
     border: 2px solid $linkcolour;
     margin: -2px;
   }
-  h1, h4 {
+  h1, .author {
     
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    color: #ffffff;
+    text-shadow: 2px 2px 2 #px #000000a6;
+    //-webkit-text-stroke: 4px #003a2960;
+    paint-order: stroke fill;
     font-size: 1.8em;
     margin: 0;
     padding: 8px;
-    background: linear-gradient(to right, rgb(0, 48, 63), rgba(0, 48, 63, 0.1));
+    background: linear-gradient(to right, rgb(0, 48, 63), rgba(0, 48, 63, 0.4));
     isolation: isolate;
     
   }
-  h4 {
-    background: linear-gradient(to right, rgb(0, 30, 39), rgba(0, 30, 39, 0.1));
+  .author {
+    background: linear-gradient(to right, rgb(0, 30, 39), rgba(0, 30, 39, 0.4));
     font-size: 0.8em;
     font-weight: 100;
     font-style: italic;
@@ -552,7 +554,7 @@ blockquote {
     color: white;
     text-shadow: 1px 1px 1px #000;
     font-size: 0.9em;
-    padding: 8px;
+    padding: 10px;
     margin: 0;
   }
 }
@@ -572,12 +574,13 @@ blockquote {
 }
 
 .titlebg {
-  mask-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
-  width: 100%;
+  background-size: cover;
+  mask-image: linear-gradient(to right, rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.3), rgb(0, 0, 0));
+  width: 60%;
   height: 100%;
   position: absolute;
   // top: 0;
-  // left: 0;
+  right: 0;
   //z-index: 1;
   
 }
