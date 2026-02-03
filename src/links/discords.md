@@ -14,7 +14,7 @@ local:\
 [birmingham discord](https://bham.melee.uk)\
 [nottingham discord](https://discord.gg/eTYjVeNyhq)\
 [reading discord](https://discord.com/invite/49eZvVzCNC)\
-[london discord](https://discord.gg/XThRMuybmz)\
+[london discord](https://discord.gg/dTsdfdhp2m)\
 [bournemouth discord](https://discord.gg/yxtPcew7gV)\
 [oxford discord](https://discord.gg/sq5JRzYuyu)\
 [leeds discord](https://leeds.melee.uk)\
