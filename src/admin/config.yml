@@ -2,11 +2,11 @@ backend:
   name: github
   repo: spirrit/meleeuk
   branch: master
-  api_root: https://api.github.com
-  site_domain: api.netlify.com
+  #api_root: https://api.github.com
+  #site_domain: api.netlify.com
   # site_domain: melee.uk
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  #base_url: https://api.netlify.com
+  #auth_endpoint: auth
   cms_label_prefix: cms/
 publish_mode: editorial_workflow
 media_folder: "src/cms/uploads"
@@ -22,10 +22,9 @@ collections:
           label: "Layout",
           name: "layout",
           widget: "hidden",
-          default: "blogpost.njk",
+          default: "blog.njk",
         }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Tags", name: "tags", default: "blog", widget: "hidden" }
@@ -69,6 +68,93 @@ collections:
           - label: "Nav link"
             name: navitems
             widget: list
-            fields: 
+            fields:
               - { label: Label, name: label, widget: string }
               - { label: Path, name: path, widget: string }
+  - name: "recurring_event"
+    label: "Recurring Events (weeklies)"
+    folder: "src/events/weeklies"
+    create: true
+    identifier_field: name
+    extension: "json"
+    fields:
+      - {
+          label: "Frequency",
+          name: "frequency",
+          widget: "select",
+          options: ["Weekly", "Fortnightly", "Monthly"],
+          default: "Weekly",
+        }
+      - { label: "Occurs on", name: "occurs_on", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - {
+          label: "Address",
+          name: "address",
+          widget: "string",
+          default: "",
+          required: false,
+        }
+      - {
+          label: "Tourney link (startgg/challonge etc.)",
+          name: "link",
+          widget: "string",
+          default: "",
+          required: false,
+        }
+      - {
+          label: "Discord invite",
+          name: "discord",
+          widget: "string",
+          default: "",
+          required: false,
+        }
+      - {
+          label: "Stream",
+          name: "stream",
+          widget: "string",
+          default: "",
+          required: false,
+        }
+      - {
+          label: "Website",
+          name: "website",
+          widget: "string",
+          default: "",
+          required: false,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          default: "",
+          required: false,
+        }
+  - name: "one_off_event"
+    label: "One-off Events"
+    folder: "src/events/tournaments"
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    extension: "json"
+    fields:
+      - {
+          label: "Level",
+          name: "level",
+          widget: "select",
+          options: ["Regional", "National", "International"],
+          default: "Regional",
+        }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "DD.MM.YYYY", # e.g. 24.12.2021
+          time_format: "HH:mm", # e.g. 21:07
+        }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Location", name: "location", widget: "string" }
+      - { label: "Address", name: "address", widget: "string" }
+      - { label: "Tourney link (startgg/challonge etc.)", name: "link", widget: "string" }
+      - { label: "Discord invite", name: "discord", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }

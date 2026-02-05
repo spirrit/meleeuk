@@ -194,9 +194,9 @@ blockquote {
   background: $mainbg;
   min-height: calc(100vh - 156px);
   //max-height: ;
-  ///max-width: 1000px;
-  max-width: 890px;
-  margin: auto;
+  //max-width: 1000px;
+  max-width: 1175px;
+  //margin: auto;
   display: grid;
   gap: 1em;
   //grid-template-areas: "sidebar main";
@@ -204,7 +204,7 @@ blockquote {
   grid-template-areas: "sidebar main"
   "sidebar main"
   "sidebar after";
-  grid-template-columns: minmax(175px,0.5fr) minmax(0,4fr);
+  grid-template-columns: minmax(160px,0.5fr) minmax(0,4fr);
   main {
     grid-area: main;
     display: flex;
@@ -534,7 +534,7 @@ blockquote {
   h1, .author {
     
     color: #ffffff;
-    text-shadow: 2px 2px 2 #px #000000a6;
+    text-shadow: 2px 2px 2px #000000a6;
     //-webkit-text-stroke: 4px #003a2960;
     paint-order: stroke fill;
     font-size: 1.8em;

@@ -1,0 +1,28 @@
+---
+title: weekly
+pagination:
+  data: weeklies
+  size: 1
+  alias: weekly
+  resolve: keys
+  generatePageOnEmptyData: true
+permalink: "events/weeklies/{{ weekly.name | slugify }}/index.html"
+---
+{% extends "weekly-base.njk" %}
+{% block after %}
+<h2>{{weekly.name}}</h2>
+<ul>
+  <li>Frequency: {{weekly.frequency}}</li>
+  <li>Occurs on: {{weekly.occurs_on}}</li>
+  {% if weekly.link %}<li><a href="{{weekly.link}}" rel="noopener noreferrer" target="_blank">Link to tournament</a></li>{% endif %}
+  {% if weekly.discord %}<li><a href="{{weekly.discord}}" rel="noopener noreferrer" target="_blank">Discord</a></li>{% endif %}
+  {% if weekly.stream %}<li><a href="{{weekly.stream}}" rel="noopener noreferrer" target="_blank">Stream</a></li>{% endif %}
+</ul>
+<p>Address: {{weekly.address}}</p>
+<p>{{weekly.description}}</p>
+{% if weekly.website %}
+  <ul>
+    <li>Visit their website: <a href="{{weekly.website}}" rel="noopener noreferrer" target="_blank">{{weekly.website}}</a></li>
+  </ul>
+{% endif %}
+{% endblock %}
