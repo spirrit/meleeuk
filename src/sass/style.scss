@@ -195,18 +195,21 @@ blockquote {
   min-height: calc(100vh - 156px);
   //max-height: ;
   //max-width: 1000px;
-  max-width: 1175px;
-  //margin: auto;
+  max-width: 1200px;
+  margin: auto;
+  padding-right: 1em;
   display: grid;
   gap: 1em;
   //grid-template-areas: "sidebar main";
   //grid-template-columns: minmax(10px,0.4fr) minmax(0,4fr);
   grid-template-areas: "sidebar main"
-  "sidebar main"
   "sidebar after";
-  grid-template-columns: minmax(160px,0.5fr) minmax(0,4fr);
+  //grid-template-columns: minmax(160px,0.5fr) minmax(0,4fr);
+  grid-template-columns: minmax(160px,1fr) minmax(0,6fr);
+  grid-template-rows: minmax(0,auto) minmax(0,1fr);
   main {
     grid-area: main;
+    //grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
     a {
@@ -225,6 +228,7 @@ blockquote {
 }
 .sidebar {
   grid-area: sidebar;
+  
   border-right: 1px solid $headfoot;
   .sideimg {
     width: 20px;
@@ -312,13 +316,14 @@ blockquote {
 
 .tbwrapper {
   max-height: 800px;
-  margin-bottom: 20px;
   display: flex;
   gap: 10px;
-  align-items: flex-start;
+  //align-items: flex-start;
   justify-content: center;
   .iss {
   width: 256px;
+  grid-row: 3 / 4;
+  
   }
   .imgsection {
     display: flex;
@@ -520,7 +525,9 @@ blockquote {
   background-size: cover;
   //transition-duration: 0.08s;
   //box-shadow: 2px 4px 8px #0000001e;
-  overflow: hidden;
+  //text-overflow: ellipsis;
+  //min-width: 0;
+  //overflow: hidden;
   //background-image: linear-gradient(red, blue);
   
   //mask-mode: alpha;
@@ -532,7 +539,9 @@ blockquote {
     margin: -2px;
   }
   h1, .author {
-    
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     color: #ffffff;
     text-shadow: 2px 2px 2px #000000a6;
     //-webkit-text-stroke: 4px #003a2960;
@@ -617,8 +626,8 @@ blockquote {
 }
 .after {
   grid-area: after;
-  margin-top: auto;
-  margin-bottom: 1em;
+  //margin-top: auto;
+  //margin-bottom: 1em;
 }
 .indexbox {
   padding: 0 15px;
@@ -643,6 +652,10 @@ blockquote {
 #blogtitle {
   font-size: 2.3em;
   margin-bottom: 0;
+}
+
+.marginb-1em {
+  margin-bottom: 1em;
 }
 
 @media (max-width: 750px) {
